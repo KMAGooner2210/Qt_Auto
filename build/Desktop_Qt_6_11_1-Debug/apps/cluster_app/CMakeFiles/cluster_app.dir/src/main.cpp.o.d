@@ -398,4 +398,5 @@ apps/cluster_app/CMakeFiles/cluster_app.dir/src/main.cpp.o: \
  /home/gooner/Qt6/6.11.1/gcc_64/include/QtQml/qqmlregistration.h \
  /home/gooner/Qt6/6.11.1/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
  /home/gooner/Qt6/6.11.1/gcc_64/include/QtQml/qqmlerror.h \
- /home/gooner/Qt6/6.11.1/gcc_64/include/QtQml/qqmlabstracturlinterceptor.h
+ /home/gooner/Qt6/6.11.1/gcc_64/include/QtQml/qqmlabstracturlinterceptor.h \
+ /home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/QDebug

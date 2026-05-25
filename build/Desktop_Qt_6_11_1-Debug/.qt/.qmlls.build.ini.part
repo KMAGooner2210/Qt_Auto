@@ -1,0 +1,3 @@
+[<SLASH>home<SLASH>gooner<SLASH>Documents<SLASH>AutomotiveCockpitWorkspace<SLASH>apps<SLASH>cluster_app]
+importPaths="/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app:/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/ClusterAppModule:/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug:/home/gooner/Qt6/6.11.1/gcc_64/qml"
+resourceFiles="/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/.qt/rcc/qmake_ClusterAppModule.qrc:/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/.qt/rcc/cluster_app_raw_qml_0.qrc"

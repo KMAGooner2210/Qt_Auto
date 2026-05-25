@@ -1,0 +1,14 @@
+-rootPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/apps/cluster_app
+-cmake-output
+-output-file
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/.qt/qml_imports/cluster_app_build.cmake
+-importPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app
+-importPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/ClusterAppModule
+-importPath
+/home/gooner/Qt6/6.11.1/gcc_64/qml
+-qrcFiles
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/.qt/rcc/qmake_ClusterAppModule.qrc
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/.qt/rcc/cluster_app_raw_qml_0.qrc

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/ClusterAppModule/">
+    <file alias="qml/Main.qml">/home/gooner/Documents/AutomotiveCockpitWorkspace/apps/cluster_app/qml/Main.qml</file>
+  </qresource>
+</RCC>
+

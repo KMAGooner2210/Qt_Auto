@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/ClusterAppModule">
+    <file alias="qmldir">/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/ClusterAppModule/qmldir</file>
+  </qresource>
+</RCC>
+

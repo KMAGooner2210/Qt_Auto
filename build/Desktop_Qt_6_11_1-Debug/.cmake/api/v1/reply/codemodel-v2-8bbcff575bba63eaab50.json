@@ -1,0 +1,241 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "apps/cluster_app",
+					"jsonFile" : "directory-apps.cluster_app-Debug-c3ee0e5740060c3e5eac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "apps/cluster_app",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "AutomotiveCockpitWorkspace",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-061e367bdee72ad7dc6c.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-all_qmllint-Debug-ba76bdb9e6a0af86dd01.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_json::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-all_qmllint_json-Debug-d94e2365a0f721e4425a.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_module::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-all_qmllint_module-Debug-3430f9d7a41f197445d5.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmltyperegistrations::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-c1440722f930b5260dad.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "clean_qml_context_properties::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-clean_qml_context_properties-Debug-ec57bb6201255ce0d7f0.json",
+					"name" : "clean_qml_context_properties",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app-Debug-97f2047460c7c487f0b8.json",
+					"name" : "cluster_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_autogen::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_autogen-Debug-7f27ec6992e32276d491.json",
+					"name" : "cluster_app_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_autogen_timestamp_deps::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_autogen_timestamp_deps-Debug-29ec13362b7edc2e8e49.json",
+					"name" : "cluster_app_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_copy_qml::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_copy_qml-Debug-f4617360e675195279d0.json",
+					"name" : "cluster_app_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_copy_res::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_copy_res-Debug-fa37dd7f8a5f2a7f83ec.json",
+					"name" : "cluster_app_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_qmlimportscan::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_qmlimportscan-Debug-b799845a60fe5ba494fa.json",
+					"name" : "cluster_app_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_qmllint::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_qmllint-Debug-f784e242e4a56ce740bf.json",
+					"name" : "cluster_app_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_qmllint_json::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_qmllint_json-Debug-d120ba609652fc147bac.json",
+					"name" : "cluster_app_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_qmllint_module::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_qmllint_module-Debug-2f4eaa4d401f31c1dc5a.json",
+					"name" : "cluster_app_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cluster_app_qmltyperegistration::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-cluster_app_qmltyperegistration-Debug-fd1f9eee46172f6b9e63.json",
+					"name" : "cluster_app_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dump_qml_context_properties::@f8339c1d6c6a0a6d85b0",
+					"jsonFile" : "target-dump_qml_context_properties-Debug-d196c74a3c2e8a382903.json",
+					"name" : "dump_qml_context_properties",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Debug-c30d0d792e30c01693b4.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_cluster_app_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_cluster_app_aotstats_target-Debug-2169cb0d1b404646d19f.json",
+					"name" : "module_cluster_app_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug",
+		"source" : "/home/gooner/Documents/AutomotiveCockpitWorkspace"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

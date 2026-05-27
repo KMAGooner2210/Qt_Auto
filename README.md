@@ -739,3 +739,395 @@
    </details> 
 
 
+<details>
+    <summary><strong>BÀI 3: CẤU TRÚC QML</strong></summary>
+
+## **BÀI 3: CẤU TRÚC QML**
+
+### **I.  QML**
+
+#### **1.1. Khái niệm** 
+
+*  Trước khi có QML, lập trình viên xây dựng giao diện Qt hoàn toàn bằng C++ — tạo từng widget, thiết lập từng thuộc tính, kết nối từng Signal-Slot bằng code.
+
+* Cách này hoạt động được nhưng có một vấn đề cốt lõi: **code mô tả giao diện và code xử lý logic trộn lẫn vào nhau**, khó đọc, khó thay đổi thiết kế mà không đụng đến logic.  
+
+* QML giải quyết điều này bằng cách tách biệt hoàn toàn hai mối quan tâm đó. 
+
+#### **1.2. Các thành phần cơ sở**			
+
+##### **1.2.1. Lớp Item và Rectangle** 
+
+*  **Item:**
+
+	* `Item` là lớp cơ sở của mọi thành phần trực quan trong QML
+	
+	* Bản thân nó không vẽ gì lên màn hình - không màu nền, không viền, không nội dung
+	
+	* Nhưng nó định nghĩa toàn bộ hệ thống tọa độ và hành vi mà mọi thành phần con kế thừa   
+
+	*  Các thuộc tính Item cung cấp chia thành 4 nhóm:
+	
+		* **Định vị hình học** - `x`, `y`, `width`, `height`, `z`
+		
+			* Tọa độ `x` và `y` luôn là tương đối so với đối tượng cha, không phải tọa độ tuyệt đối của màn hình  
+
+		* **Biến đổi không gian** - `scale` (thu phóng), `rotation` (xoay quanh tâm)
+		
+			* Các biến đổi này ảnh hưởng đến cả đối tượng lẫn toàn bộ cây con bên trong nó  
+		
+		* **Trạng thái hiển thị** - `opacity` (từ 0.0 đến 1.0), `visible`
+		
+			* `opacity: 0` và `visible: false` khác nhau 
+			
+			* `opacity: 0` vẫn chiếm không gian và nhận sự kiện chuột 
+			
+			* `visible: false` thì không  
+
+		* **Trạng thái hiển thị** - `opacity` (từ 0.0 đến 1.0), `visible`
+		
+			* `opacity: 0` và `visible: false` khác nhau 
+			
+	*  **Cơ chế neo giữ** - `anchors`
+	
+		* Đây là hệ thống định vị tương đối mạnh nhất trong QML, cho phép gắn cạnh của một phần tử vào cạnh của phần tử khác mà không cần tính toán tọa độ thủ công.
+
+
+				Item {
+					id: rootContainer
+					width: 400
+					height: 300
+
+					Item {
+						x: 50      // Cách cạnh trái của cha 50px
+						y: 50      // Cách cạnh trên của cha 50px
+						width: parent.width * 0.5   // Bằng nửa chiều rộng cha
+						height: 100
+				   }
+			     }
+				 
+*  **Rectangle:**
+
+	* `Rectangle` kế thừa toàn bộ `Item` và bổ sung khả năng vẽ hình học cơ bản
+	
+	* `color` - màu nền, nhận giá trị hex, tên màu CSS, hoặc đối tượng `Qt.rgba()`: 
+	
+			color: "#2c3e50"     // Hex
+			color: "transparent" // Trong suốt
+			color: Qt.rgba(1, 0, 0, 0.5)  // Đỏ, 50% opacity
+	
+	* `border.color` và `border.width` - viền được vẽ bên trong ranh giới hình học
+	
+		* Một rectangle rộng 100px với viền 10px thực ra chỉ có vùng nền màu rộng 80px - viền ăn vào trong, không mở rộng ra ngoài
+		    
+
+	* `radius` - bo góc
+	
+		* Khi `radius` bằng một nửa `width` và `height` (với hình vuông), Rectangle trở thành hình tròn hoàn hảo
+		
+				Rectangle {
+				    width: 60
+				    height: 60
+				    radius: 30    // Hình tròn
+				    color: "#3498db"
+				}
+
+	* `gradient` - chuyển màu tuyến tính qua các điểm dừng màu `GradientStop`:
+	
+			Rectangle {
+			    width: 200
+			    height: 200
+			    color: "#2c3e50"
+			    border.color: "#3498db"
+			    border.width: 2
+			    radius: 10
+
+			    gradient: Gradient {
+			        GradientStop { position: 0.0; color: "#3498db" }
+			        GradientStop { position: 1.0; color: "#2c3e50" }
+			    }
+			}
+				
+
+##### **1.2.2. Text và Image** 
+
+*  **Text: Hiển thị văn bản**
+
+	* Phần tử `Text` kết xuất chuỗi ký tự với hệ thống định dạng đầy đủ thông qua nhóm thuộc tính `font`:
+	
+			Text {
+			    width: 150
+			    text: "Tài liệu kỹ thuật lập trình hệ thống Qt/QML"
+			    font.pixelSize: 14
+			    font.bold: true
+			    wrapMode: Text.WordWrap      // Tự động xuống dòng theo từ
+			    elide: Text.ElideRight       // Cắt ngắn với "..." nếu vượt width
+			    horizontalAlignment: Text.AlignLeft
+			}
+	
+	* `wrapMode`: quyết định cách ngắt dòng chỉ hoạt động khi `width` được xác định rõ ràng
+	
+		* `Text.WordWrap` chỉ ngắt tại khoảng trắng giữa từ
+		
+		* `Text.WrapAnywhere` ngắt tại bất kỳ ký tự nào
+		
+	* `elide`: chỉ có tác dụng khi **không** dùng `wrapMode`, nó cắt ngắt văn bản một dòng và thêm `...`
+	
+		* `Text.ElideRight` cắt ở cuối
+		
+		* `Text.ElideMiddle` cắt ở giữa
+	
+*  **Image: Hiển thị hình ảnh và tối ưu bộ nhớ**
+
+	* Phần tử `Image` hỗ trợ PNG, JPEG, SVG và cả URL từ mạng
+	
+	* Vấn đề hiệu năng xuất hiện khi ảnh gốc có độ phân giải lớn nhưng chỉ hiển thị ở kích thước nhỏ 
+
+			// SAI về mặt tối ưu bộ nhớ
+			Image {
+			    width: 100
+			    height: 100
+			    source: "photo_4000x3000.jpg"
+			    // Qt vẫn giải mã toàn bộ ảnh 4000×3000 vào RAM
+			    // rồi mới thu nhỏ xuống 100×100 để hiển thị
+			    // → Lãng phí ~144MB RAM cho một ảnh 100px
+			}
+
+	* Giải pháp với `sourceSize`
+	
+		* `sourceSize` can thiệp vào quá trình giải mã, không phải quá trình hiển thị - đó là lý do tại sao nó tiết kiệm bộ nhớ thực sự
+		
+		* Còn `width/height` chỉ thu nhỏ ảnh sau khi đã giải mã toàn bộ  
+	
+			Image {
+			    width: 100
+			    height: 100
+			    source: "photo_4000x3000.jpg"
+			    sourceSize.width: 100
+			    sourceSize.height: 100
+			    // Qt chỉ giải mã ảnh ở kích thước 100×100 ngay từ đầu
+			    // → Tiết kiệm bộ nhớ đáng kể
+			}
+
+	* Tải bất đồng bộ với `asynchronous`:
+	
+				Image {
+				    width: 100
+				    height: 100
+				    source: "https://example.com/large-image.png"
+				    asynchronous: true     // Giải mã trên luồng phụ — UI không bị chặn
+				    cache: true            // Lưu kết quả vào bộ đệm — lần sau không giải mã lại
+				    sourceSize.width: 100
+				    sourceSize.height: 100
+				}  
+
+### **II.  CƠ CHẾ LIÊN KẾT DỮ LIỆU TỰ ĐỘNG - PROPERTY BINDING**
+
+#### **2.1. Bối cảnh** 
+
+* Trong lập trình giao diện truyền thống, khi kích thước cửa sổ thay đổi, lập trình viên phải tự viết code lắng nghe sự kiện resize, tính toán lại kích thước từng phần tử, rồi gán lại từng giá trị.
+
+* Với giao diện phức tạp, đây là công việc lặp đi lặp lại và dễ sai.
+
+* Property Binding giải quyết điều này bằng cách cho phép lập trình viên **khai báo quan hệ** thay vì khai báo từng bước cập nhật.
+
+#### **2.2. Liên kết tĩnh và liên kết động**			
+
+##### **2.2.1. Liên kết tĩnh - Khai báo tại thời điểm định nghĩa** 
+
+*  Dấu hiệu nhận biết liên kết tĩnh là dấu `:` trong khai báo thuộc tính.
+
+* Bất cứ khi nào vế phải của `:` tham chiếu đến một thuộc tính khác, QML tự động thiết lập mối quan hệ theo dõi:
+	
+			Rectangle {
+			    id: container
+			    width: 400
+			    height: 300
+
+			    Rectangle {
+			        id: innerBox
+			        width: parent.width * 0.5   // Liên kết — luôn bằng nửa chiều rộng cha
+			        height: parent.height - 50  // Liên kết — luôn kém chiều cao cha 50px
+			    }
+			}
+	
+	* Khi QML engine phân tích biểu thức `parent.width * 0.5`, nó tự động đăng ký `innerBox.width` là một  người quan sát  của `parent.width`
+
+	* Mỗi khi `parent.width` phát Signal `widthChanged`, engine tính lại biểu thức và cập nhật `innerBox.width` — toàn bộ diễn ra tự động, không cần một dòng code xử lý nào.
+	
+##### **2.2.2. Phá vỡ liên kết** 
+
+* Liên kết tĩnh bị phá vỡ ngay lập tức khi dùng toán tử gán `=` trong JavaScript:
+
+			Rectangle {
+			    id: container
+			    width: 400
+
+			    Rectangle {
+			        id: innerBox
+			        width: parent.width * 0.5  // Liên kết đang hoạt động
+			    }
+
+			    MouseArea {
+			        anchors.fill: parent
+			        onClicked: {
+			            innerBox.width = 200
+			            // Dòng này làm HAI việc:
+			            // 1. Gán giá trị 200 cho innerBox.width
+			            // 2. XÓA HOÀN TOÀN liên kết "parent.width * 0.5"
+			            // Từ đây, khi container thay đổi kích thước,
+			            // innerBox.width sẽ đứng yên tại 200 — không còn cập nhật nữa
+			        }
+			    }
+			}
+
+##### **2.2.3. Liên kết động** 
+
+*  Khi cần thiết lập liên kết từ bên trong code JavaScript (ví dụ sau một sự kiện), phải dùng `Qt.binding()` thay vì gán `=` trực tiếp:
+
+		Rectangle {
+		    id: root
+		    width: 400
+		    height: 300
+
+		    Rectangle {
+		        id: box
+		        width: 100  // Giá trị ban đầu cố định
+		    }
+
+		    Component.onCompleted: {
+		        // Gán = sẽ phá vỡ liên kết — Qt.binding() tạo liên kết mới
+		        box.width = Qt.binding(function() {
+		            return root.width * 0.8;
+		        });
+		        // Từ đây box.width = root.width * 0.8 và tự cập nhật như liên kết tĩnh
+		    }
+		}
+
+
+#### **2.3. Binding Loop**			
+
+##### **2.3.1. Bản chất** 
+
+*  Vòng lặp liên kết xảy ra khi hai thuộc tính phụ thuộc lẫn nhau tạo thành chu trình khép kín — A phụ thuộc B, B phụ thuộc A:
+
+		Rectangle {
+		    id: rect
+		    width: height * 2   // width phụ thuộc height
+		    height: width / 2   // height phụ thuộc width
+		}
+
+	* Khi engine cố tính `width`, nó cần biết `height`. Để tính `height`, nó cần biết `width`, QML engine phát hiện chu trình này và in cảnh báo:		
+
+			QML Rectangle: Binding loop detected for property "width"
+
+	* Engine tự ngắt chu trình tại một điểm tùy ý để tránh crash — hệ quả là giao diện hiển thị sai kích thước mà không có thông báo lỗi rõ ràng nào khác.
+
+##### **2.3.2. Kỹ thuật phòng tránh** 
+
+*  Xác định luồng dữ liệu một chiều
+
+			// SAI — chu trình hai chiều
+			Rectangle {
+			    width: height * 2
+			    height: width / 2
+			}
+
+			// ĐÚNG — luồng một chiều rõ ràng
+			Rectangle {
+			    width: 200          // Nguồn gốc cố định
+			    height: width / 2   // Phụ thuộc một chiều vào width
+			}
+
+*  Dùng signal handler thay vì liên kết hai chiều
+		
+		Rectangle {
+		    id: rect
+		    width: 200
+		    height: 100
+
+		    // Khi width thay đổi, cập nhật height một chiều
+		    onWidthChanged: {
+		        height = width / 2
+		        // Đây là gán tĩnh — không tạo liên kết ngược
+		    }
+		}
+
+#### **2.4. Tích hợp và tối ưu mã lệnh JavaScript**			
+
+##### **2.4.1. Bối cảnh** 
+
+*  QML dùng JavaScript để xử lý logic giao diện — phản ứng với sự kiện, tính toán giá trị, điều hướng trạng thái.
+
+* Trên máy tính x86/x64 hiện đại, chi phí này thường không đáng kể.
+
+* Nhưng trên các thiết bị nhúng dùng vi xử lý ARM — màn hình ô tô, thiết bị y tế, bảng điều khiển công nghiệp — cùng một đoạn JavaScript có thể là nguyên nhân khiến giao diện giật hoặc drop frame. 
+	
+
+	
+##### **2.4.2. Phạm vi thực thi và `.pragma library`** 
+
+* **Inline Scope:**
+
+	* Khi viết JavaScript trực tiếp trong file QML, code đó chạy trong ngữ cảnh của đối tượng QML chứa nó — có thể truy cập trực tiếp các thuộc tính và đối tượng xung quanh:  
+
+			Button {
+			    id: myButton
+			    onClicked: {
+			        myButton.text = "Đã kích hoạt"
+			        // Truy cập trực tiếp myButton, parent, các id khác trong file
+			    }
+			}
+
+* **.pragma library**
+
+	* Khi logic đủ phức tạp để đáng tách ra file riêng, Qt cung cấp hai chế độ cho file `.js`:
+	
+	* **Chế độ thông thường**  
+	
+		* Mỗi component import file JS sẽ nhận một bản sao ngữ cảnh riêng.
+	
+		* Biến toàn cục trong file JS không chia sẻ giữa các component: 
+
+				// utils.js — chế độ thông thường
+				var callCount = 0;   // Mỗi component import sẽ có biến callCount riêng
+
+	* **Chế độ .pragma library**  
+	
+			// helper.js
+			.pragma library   // Khai báo Singleton — phải là dòng đầu tiên
+
+			var globalCounter = 0;   // Chia sẻ cho toàn bộ ứng dụng
+
+			function incrementCounter() {
+			    globalCounter++;
+			    return globalCounter;
+			}
+
+			function clamp(value, min, max) {
+			    return Math.max(min, Math.min(max, value));
+			}
+
+	* **Hạn chế**  
+	
+		* Hàm bên trong không thể truy cập đối tượng QML trực tiếp — không có `parent`, không có `id`, không có ngữ cảnh QML nào cả.
+		
+		* Mọi dữ liệu cần xử lý phải truyền qua tham số:
+
+				// SAI — không hoạt động trong .pragma library
+				function updateButton() {
+				    myButton.text = "Done"   // myButton không tồn tại trong ngữ cảnh này
+				}
+
+				// ĐÚNG — truyền dữ liệu qua tham số, trả về kết quả
+				function formatLabel(value, unit) {
+				    return value.toFixed(2) + " " + unit
+				}								
+
+
+
+		    	 			
+   </details> 
+
+
+

@@ -1130,4 +1130,392 @@
    </details> 
 
 
+<details>
+    <summary><strong>BÀI 4: AUTOMOTIVE GRAPHICS</strong></summary>
+
+## **BÀI 4: AUTOMOTIVE GRAPHICS**
+
+### **I.  THƯ VIỆN QT QUICK CONTROLS 2**
+
+#### **1.1. Các thành phần tương tác và trạng thái** 
+
+*  Mọi component trong QQC2 đều có cấu trúc tách biệt hai lớp:
+
+		┌─────────────────────────────────────────┐
+		│          Qt Quick Control 2             │
+		└────────────────────┬────────────────────┘
+		                     │
+		      ┌──────────────┴──────────────┐
+		      ▼                             ▼
+		┌──────────────┐           ┌──────────────┐
+		│ contentItem  │           │  background  │
+		│ (nội dung)   │           │  (khung nền) │
+		└──────────────┘           └──────────────┘  
+
+* Logic điều khiển (giá trị, trạng thái, sự kiện) nằm trong component, còn cách hiển thị hoàn toàn được kiểm soát qua hai cổng `background` và `contentItem`.
+
+* **Dial - Núm xoay:**
+
+	* Mô phỏng cơ chế xoay vật lý, dùng để điều chỉnh các thông số liên tục như nhiệt độ điều hòa, mức gió, âm lượng:
+
+			Dial {
+				from: 16      // Nhiệt độ tối thiểu
+				to: 30	      // Nhiệt độ tối đa
+				value: 22     // Giá trị hiện tại
+				stepSize: 0.5 // Mỗi bước nhảy 0.5 độ
+
+				// pressed = true khi người dùng đang giữ và xoay
+				// Dùng để kích hoạt phản hồi xúc giác
+				onPressedChanged: {
+					if (pressed) hapticEngine.vibrate()
+				}
+			}
+
+* **Dial - Núm xoay:**
+
+	* Mô phỏng cơ chế xoay vật lý, dùng để điều chỉnh các thông số liên tục như nhiệt độ điều hòa, mức gió, âm lượng:
+
+			Dial {
+				from: 16      // Nhiệt độ tối thiểu
+				to: 30	      // Nhiệt độ tối đa
+				value: 22     // Giá trị hiện tại
+				stepSize: 0.5 // Mỗi bước nhảy 0.5 độ
+
+* **ProgressBar - Thanh tiến trình:**
+
+	* Hiển thị dữ liệu trạng thái một chiều — người dùng chỉ đọc, không tương tác.
+	
+	* Dùng cho SOC pin xe điện, mức nhiên liệu, tiến độ OTA update: 
+
+			ProgressBar {
+			    from: 0
+			    to: 100
+			    value: batteryLevel   // Liên kết trực tiếp với dữ liệu C++
+
+			    // indeterminate: true khi chưa biết thời gian hoàn thành
+			    // Hiển thị animation chạy vô hạn thay vì thanh tiến trình tĩnh
+			    indeterminate: otaUpdate.isCalculating
+			}
+
+
+* **Slider - Thanh trượt:**
+
+	* Cho phép người dùng trượt tuyến tính để thay đổi giá trị — độ sáng màn hình, độ nhạy, ...
+	
+			Slider {
+			    orientation: Qt.Horizontal   // hoặc Qt.Vertical
+			    from: 0
+			    to: 100
+			    value: screenBrightness
+
+			    onValueChanged: displaySystem.setBrightness(value)
+			}
+
+* **Button - Nút nhấn:**
+
+	* Kích hoạt sự kiện rời rạc.
+	
+	* Thuộc tính `checkable` biến Button thành nút bật/tắt giữ trạng thái — phù hợp cho các chức năng như sấy kính, bật/tắt camera lùi: 
+	
+			Button {
+			    text: "SEAT HEAT"
+			    checkable: true     // Giữ trạng thái on/off
+
+			    // checked: true khi đang bật, false khi đang tắt
+			    // pressed: true chỉ trong lúc đang nhấn giữ
+			    // hovered: true khi con trỏ đang ở trên nút (màn hình cảm ứng không dùng)
+			    onCheckedChanged: seatHeating.setActive(checked)
+			}
+
+
+#### **1.2. Styling Override**			
+
+*  Trong ứng dụng ô tô thương mại, giao diện phải tuân theo nhận diện thương hiệu (brand identity) của từng hãng xe — màu sắc, font chữ, hình dạng nút bấm đều được quy định nghiêm ngặt.
+
+* Giao diện mặc định của QQC2 không đáp ứng được điều này.
+	
+* QQC2 giải quyết bằng cách cho phép **thay thế hoàn toàn** hai lớp hiển thị mà không ảnh hưởng đến logic bên trong:
+	
+			import QtQuick 2.15
+			import QtQuick.Controls 2.15
+
+			Button {
+			    id: control
+			    text: "AC CONTROL"
+			    checkable: true
+
+			    // Thay thế hoàn toàn lớp nền — vẫn giữ nguyên logic pressed/checked
+			    background: Rectangle {
+			        implicitWidth: 150
+			        implicitHeight: 50
+
+			        // Màu thay đổi theo trạng thái checked
+			        color: control.checked ? "#1abc9c" : "#2c3e50"
+
+			        // Viền thay đổi theo trạng thái pressed
+			        border.color: control.pressed ? "#3498db" : "#34495e"
+			        border.width: 2
+			        radius: 8
+			    }
+
+			    // Thay thế hoàn toàn lớp nội dung
+			    contentItem: Text {
+			        text: control.text
+			        font.pixelSize: 14
+			        font.bold: true
+
+			        // Màu chữ thay đổi theo trạng thái checked
+			        color: control.checked ? "#ffffff" : "#bdc3c7"
+			        horizontalAlignment: Text.AlignHCenter
+			        verticalAlignment: Text.AlignVCenter
+			    }
+			}
+
+	* `control.checked`, `control.pressed`, `control.text` trong các block `background` và `contentItem` là **liên kết trực tiếp** vào trạng thái của Button.
+	
+	* Khi người dùng nhấn nút, `control.pressed` thay đổi → `border.color` tự cập nhật ngay lập tức mà không cần viết một dòng xử lý sự kiện nào. 
+				
+
+
+### **II.  QT RESOURCE SYSTEM**
+
+#### **2.1. Bối cảnh** 
+
+* Ứng dụng desktop thông thường đọc file hình ảnh, font chữ, QML từ ổ cứng tại runtime — đơn giản và linh hoạt.
+
+* Nhưng trên hệ thống Automotive chạy QNX hay Embedded Linux, cách tiếp cận đó có rủi ro thực sự: xe đang chạy trên đường xóc, bộ nhớ flash bị rung lắc, đọc file có thể thất bại; hoặc đơn giản hơn, file bị xóa nhầm, đường dẫn sai, hệ thống file bị hỏng.
+
+* Qt Resource System giải quyết triệt để bằng cách biên dịch toàn bộ tài nguyên vào thẳng file thực thi
+
+#### **2.2. Biên dịch tài nguyên với qt_add_resources và đường dẫn qrc: /**			
+
+##### **2.2.1. Cơ chế hoạt động** 
+
+*  Thay vì đọc file từ đĩa tại runtime, Qt chuyển đổi từng file tài nguyên thành một mảng byte tĩnh trong C++ tại thời điểm build.
+
+* Mảng này được liên kết thẳng vào file thực thi nhị phân:
+	
+		images/speedometer.png  ──►  static const unsigned char speedometer_png[] = { 0x89, 0x50, ... };
+		fonts/Roboto-Bold.ttf   ──►  static const unsigned char roboto_bold_ttf[] = { 0x00, 0x01, ... };
+	
+	* Kết quả: ứng dụng là **một file nhị phân duy nhất** chứa toàn bộ giao diện, hình ảnh và font — không phụ thuộc vào bất kỳ file ngoài nào.
+	
+##### **2.2.2. Cấu hình CMake** 
+
+			qt_add_resources(AutomotiveHMI "resources"
+			    PREFIX "/"           # Tiền tố đường dẫn ảo
+			    FILES
+			        "images/speedometer.png"
+			        "images/fuel_icon.svg"
+			        "fonts/Roboto-Bold.ttf"
+			)
+
+##### **2.2.3. Truy cập qua đường dẫn ảo qrc:/** 
+
+*  Sau khi biên dịch, Qt tạo ra một hệ thống file ảo trong RAM.
+
+* Ứng dụng truy cập bằng tiền tố `qrc:/` — Qt tự điều hướng đến mảng byte tương ứng trong bộ nhớ, hoàn toàn bỏ qua bước I/O đĩa: 
+
+			Image {
+			    source: "qrc:/images/speedometer.png"
+			    // Qt không đọc file — tra cứu địa chỉ mảng byte trong RAM và trả về ngay
+			}
+
+			FontLoader {
+			    source: "qrc:/fonts/Roboto-Bold.ttf"
+			}
+
+#### **2.3. Chi phí CPU/GPU**			
+
+##### **2.3.1. Vector - SVG** 
+
+*  SVG lưu trữ hình ảnh dưới dạng phương trình toán học XML
+
+*  Không có pixel nào được lưu sẵn — GPU phải tính toán và vẽ từng pixel từ các công thức đó mỗi khi cần hiển thị (quá trình gọi là rasterization):
+
+		File SVG: <circle cx="50" cy="50" r="40" stroke="black"/>
+		              ↓
+		GPU phải tính: "Pixel nào nằm trên đường tròn tâm (50,50) bán kính 40?"
+		              ↓
+		Tính từng pixel → ghi vào texture buffer → hiển thị
+
+
+
+##### **2.3.2. Raster - PNG** 
+
+*  PNG lưu trữ ảnh điểm đã được nén (lossless).
+
+* Giải mã nhanh hơn SVG vì không cần tính toán hình học.
+
+* Nhưng khi đưa vào VRAM để GPU sử dụng, PNG phải được **giải nén hoàn toàn** thành dạng RGBA8888 thô:  
+
+		File PNG 500KB  ──► Giải nén ──►  Texture RGBA8888 trong VRAM: 4000×3000×4 byte = ~46MB
+
+*  Băng thông truyền dữ liệu từ RAM lên VRAM là tài nguyên giới hạn — đặc biệt trên SoC Automotive nơi CPU và GPU dùng chung bộ nhớ.
+		
+##### **2.3.3. Nén phần cứng - ETC2 / ASTC** 
+
+*  Ảnh được nén theo khối (block-based compression) và **giữ nguyên dạng nén ngay cả khi đã nạp vào VRAM**.
+
+* GPU có phần cứng giải nén tích hợp, tự giải nén mỗi block khi cần lấy mẫu — không tốn băng thông truyền tải, không tốn RAM/VRAM bổ sung:
+
+		PNG 46MB trong VRAM  ──►  ETC2 tương đương: ~6MB trong VRAM
+		                          Giảm băng thông bộ nhớ 6-8 lần
+
+
+### **III.  HIỆU ỨNG THỊ GIÁC VÀ HOẠT ẢNH**
+
+#### **3.1. Xây dựng luồng hoạt ảnh** 
+
+##### **3.1.1. Property Animation** 
+
+* `PropertyAnimation` thay đổi giá trị một thuộc tính từ điểm đầu đến điểm cuối trong khoảng thời gian xác định.
+
+			PropertyAnimation {
+			    target: speedometerNeedle
+			    property: "rotation"
+			    from: -120
+			    to: 120
+			    duration: 1500   // 1.5 giây
+			}
+
+##### **3.1.2. Sequential Animation** 
+
+* Các bước hoạt ảnh chạy nối tiếp nhau — bước sau chỉ bắt đầu khi bước trước hoàn thành:
+
+			SequentialAnimation {
+			    // Bước 1 chạy xong → Bước 2 mới bắt đầu
+			    PropertyAnimation { target: gauge; property: "opacity"; to: 1.0; duration: 500 }
+			    PropertyAnimation { target: needle; property: "rotation"; to: 120; duration: 1500 }
+			}
+
+##### **3.1.3. Parallel Animation** 
+
+* Nhiều hoạt ảnh khởi chạy cùng một lúc, kết thúc theo thời gian riêng của từng cái:
+
+			ParallelAnimation {
+			    // Cả hai chạy đồng thời từ cùng một thời điểm
+			    PropertyAnimation { target: needle; property: "rotation"; to: 120; duration: 1500 }
+			    PropertyAnimation { target: glowEffect; property: "opacity"; to: 0.8; duration: 1500 }
+			}
+						
+#### **3.2. Easing Curves - Mô phỏng kim đồng hồ**			
+
+*  Chuyển động tuyến tính (`Easing.Linear`) — tốc độ không đổi từ đầu đến cuối — không tồn tại trong thế giới vật lý.
+
+* Mọi vật thể có khối lượng đều gia tốc khi bắt đầu và giảm tốc khi dừng.
+
+* Easing curve là hàm toán học ánh xạ thời gian thực thi (0.0 → 1.0) sang tiến trình hoạt ảnh theo đường cong phi tuyến thay vì đường thẳng.
+
+* **`Easing.OutCubic`**
+
+	* Giảm tốc mượt mà, không vượt ngưỡng.
+	
+	* Phù hợp cho kim đồng hồ tốc độ tăng khi đạp ga: 
+
+			PropertyAnimation {
+			    property: "rotation"
+			    to: targetAngle
+			    duration: 300
+			    easing.type: Easing.OutCubic
+			    // Nhanh lúc đầu, chậm dần khi tiến gần đích
+			    // Cảm giác: kim "lao" về phía giá trị mới rồi dừng mượt
+			}	
+
+* **`Easing.OutBack`**
+
+	* Vượt ngưỡng nhẹ rồi nảy về
+	
+	* Mô phỏng đúng quán tính cơ học của đồng hồ analog vật lý:
+
+			PropertyAnimation {
+			    property: "rotation"
+			    to: targetAngle
+			    duration: 300
+			    easing.type: Easing.OutBack
+			    easing.overshoot: 1.2   // Kiểm soát mức độ vượt ngưỡng
+			    // Kim vượt qua vị trí đích ~20% rồi nảy về
+			    // Cảm giác: hoàn toàn giống đồng hồ cơ học thật
+			}	
+
+* **`Easing.InOutQuad`**
+
+	* Gia tốc đầu, giảm tốc cuối, đối xứng.
+	
+	* Phù hợp cho chuyển cảnh màn hình và thanh tiến trình:
+
+			PropertyAnimation {
+			    property: "opacity"
+			    duration: 400
+			    easing.type: Easing.InOutQuad
+			    // Mờ dần đều ở đầu và cuối — chuyển cảnh tự nhiên
+			}	
+				
+
+#### **3.2. Canvas và ShaderEffect**			
+
+*  **Canvas - Vẽ tùy ý bằng CPU**
+
+	* Canvas cung cấp API vẽ trực tiếp kiểu HTML5, phù hợp cho đồ thị động hoặc các hình học không thể tạo bằng Rectangle thông thường:
+
+			Canvas {
+			    id: customGauge
+			    width: 200
+			    height: 200
+
+			    onPaint: {
+			        var ctx = getContext("2d")
+			        ctx.reset()
+			        ctx.strokeStyle = "#3498db"
+			        ctx.lineWidth = 8
+			        ctx.beginPath()
+			        // Vẽ cung tròn chỉ số năng lượng từ -180° đến 0°
+			        ctx.arc(100, 100, 80, -Math.PI, 0)
+			        ctx.stroke()
+			    }
+			}
+
+	* Canvas phù hợp cho nội dung vẽ một lần hoặc cập nhật không thường xuyên, không phải animation liên tục.
+
+*  **ShaderEffect - Vẽ bằng GPU**
+
+	* Khi cần hiệu ứng phức tạp chạy liên tục ở 60 FPS — phát sáng, sóng ánh sáng, hiệu ứng nhiễu — `ShaderEffect` can thiệp trực tiếp vào GPU pipeline thông qua GLSL:
+
+			ShaderEffect {
+			    width: 200
+			    height: 200
+
+			    // Biến QML tự động ánh xạ thành uniform trong GLSL
+			    property real uTime: 0.0
+			    property color uGlowColor: "#00ffcc"
+
+			    // uTime tăng liên tục — tạo animation động trong shader
+			    NumberAnimation on uTime {
+			        from: 0; to: 100
+			        duration: 100000
+			        loops: Animation.Infinite
+			    }
+
+			    fragmentShader: "
+			        varying highp vec2 qt_TexCoord0;
+			        uniform lowp float qt_Opacity;
+			        uniform highp float uTime;
+			        uniform lowp vec4 uGlowColor;
+
+			        void main() {
+			            highp vec2 uv = qt_TexCoord0 - vec2(0.5);
+			            highp float dist = length(uv);
+			            // Sóng ánh sáng lan ra từ tâm theo thời gian
+			            highp float wave = sin(dist * 20.0 - uTime * 5.0) * 0.5 + 0.5;
+			            gl_FragColor = uGlowColor * wave * (1.0 - dist * 2.0) * qt_Opacity;
+			        }
+			    "
+			}
+
+
+		    	 			
+   </details> 
+
+
+
 

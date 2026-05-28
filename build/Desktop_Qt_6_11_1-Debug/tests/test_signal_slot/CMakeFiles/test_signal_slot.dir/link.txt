@@ -1,0 +1,1 @@
+/bin/g++ -g CMakeFiles/test_signal_slot.dir/test_signal_slot_autogen/mocs_compilation.cpp.o CMakeFiles/test_signal_slot.dir/main.cpp.o CMakeFiles/test_signal_slot.dir/sensor.cpp.o CMakeFiles/test_signal_slot.dir/display.cpp.o -o test_signal_slot  -Wl,-rpath,/home/gooner/Qt6/6.11.1/gcc_64/lib /home/gooner/Qt6/6.11.1/gcc_64/lib/libQt6Core.so.6.11.1

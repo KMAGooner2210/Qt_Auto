@@ -130,17 +130,17 @@ generate_qmlls_build_ini_file/fast:
 .PHONY : generate_qmlls_build_ini_file/fast
 
 #=============================================================================
-# Target rules for targets named module_cluster_app_aotstats_target
+# Target rules for targets named module_Chap3_3.1_aotstats_target
 
 # Build rule for target.
-module_cluster_app_aotstats_target: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_cluster_app_aotstats_target
-.PHONY : module_cluster_app_aotstats_target
+module_Chap3_3.1_aotstats_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_Chap3_3.1_aotstats_target
+.PHONY : module_Chap3_3.1_aotstats_target
 
 # fast build rule for target.
-module_cluster_app_aotstats_target/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_cluster_app_aotstats_target.dir/build.make CMakeFiles/module_cluster_app_aotstats_target.dir/build
-.PHONY : module_cluster_app_aotstats_target/fast
+module_Chap3_3.1_aotstats_target/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build
+.PHONY : module_Chap3_3.1_aotstats_target/fast
 
 #=============================================================================
 # Target rules for targets named all_aotstats
@@ -156,30 +156,30 @@ all_aotstats/fast:
 .PHONY : all_aotstats/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app
+# Target rules for targets named Chap3_3.1
 
 # Build rule for target.
-cluster_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app
-.PHONY : cluster_app
+Chap3_3.1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1
+.PHONY : Chap3_3.1
 
 # fast build rule for target.
-cluster_app/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app.dir/build.make apps/cluster_app/CMakeFiles/cluster_app.dir/build
-.PHONY : cluster_app/fast
+Chap3_3.1/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/build
+.PHONY : Chap3_3.1/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_qmltyperegistration
+# Target rules for targets named Chap3_3.1_qmltyperegistration
 
 # Build rule for target.
-cluster_app_qmltyperegistration: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_qmltyperegistration
-.PHONY : cluster_app_qmltyperegistration
+Chap3_3.1_qmltyperegistration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_qmltyperegistration
+.PHONY : Chap3_3.1_qmltyperegistration
 
 # fast build rule for target.
-cluster_app_qmltyperegistration/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/build
-.PHONY : cluster_app_qmltyperegistration/fast
+Chap3_3.1_qmltyperegistration/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/build
+.PHONY : Chap3_3.1_qmltyperegistration/fast
 
 #=============================================================================
 # Target rules for targets named all_qmltyperegistrations
@@ -191,47 +191,47 @@ all_qmltyperegistrations: cmake_check_build_system
 
 # fast build rule for target.
 all_qmltyperegistrations/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/build.make apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/build
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build
 .PHONY : all_qmltyperegistrations/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_qmllint
+# Target rules for targets named Chap3_3.1_qmllint
 
 # Build rule for target.
-cluster_app_qmllint: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_qmllint
-.PHONY : cluster_app_qmllint
+Chap3_3.1_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_qmllint
+.PHONY : Chap3_3.1_qmllint
 
 # fast build rule for target.
-cluster_app_qmllint/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/build
-.PHONY : cluster_app_qmllint/fast
+Chap3_3.1_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/build
+.PHONY : Chap3_3.1_qmllint/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_qmllint_json
+# Target rules for targets named Chap3_3.1_qmllint_json
 
 # Build rule for target.
-cluster_app_qmllint_json: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_qmllint_json
-.PHONY : cluster_app_qmllint_json
+Chap3_3.1_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_qmllint_json
+.PHONY : Chap3_3.1_qmllint_json
 
 # fast build rule for target.
-cluster_app_qmllint_json/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/build
-.PHONY : cluster_app_qmllint_json/fast
+Chap3_3.1_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/build
+.PHONY : Chap3_3.1_qmllint_json/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_qmllint_module
+# Target rules for targets named Chap3_3.1_qmllint_module
 
 # Build rule for target.
-cluster_app_qmllint_module: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_qmllint_module
-.PHONY : cluster_app_qmllint_module
+Chap3_3.1_qmllint_module: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_qmllint_module
+.PHONY : Chap3_3.1_qmllint_module
 
 # fast build rule for target.
-cluster_app_qmllint_module/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/build
-.PHONY : cluster_app_qmllint_module/fast
+Chap3_3.1_qmllint_module/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/build
+.PHONY : Chap3_3.1_qmllint_module/fast
 
 #=============================================================================
 # Target rules for targets named all_qmllint
@@ -243,7 +243,7 @@ all_qmllint: cmake_check_build_system
 
 # fast build rule for target.
 all_qmllint/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint.dir/build
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build
 .PHONY : all_qmllint/fast
 
 #=============================================================================
@@ -256,7 +256,7 @@ all_qmllint_json: cmake_check_build_system
 
 # fast build rule for target.
 all_qmllint_json/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_json.dir/build
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build
 .PHONY : all_qmllint_json/fast
 
 #=============================================================================
@@ -269,7 +269,7 @@ all_qmllint_module: cmake_check_build_system
 
 # fast build rule for target.
 all_qmllint_module/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_module.dir/build
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build
 .PHONY : all_qmllint_module/fast
 
 #=============================================================================
@@ -282,7 +282,7 @@ dump_qml_context_properties: cmake_check_build_system
 
 # fast build rule for target.
 dump_qml_context_properties/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/build
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build
 .PHONY : dump_qml_context_properties/fast
 
 #=============================================================================
@@ -295,73 +295,73 @@ clean_qml_context_properties: cmake_check_build_system
 
 # fast build rule for target.
 clean_qml_context_properties/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/build
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build
 .PHONY : clean_qml_context_properties/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_copy_qml
+# Target rules for targets named Chap3_3.1_copy_qml
 
 # Build rule for target.
-cluster_app_copy_qml: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_copy_qml
-.PHONY : cluster_app_copy_qml
+Chap3_3.1_copy_qml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_copy_qml
+.PHONY : Chap3_3.1_copy_qml
 
 # fast build rule for target.
-cluster_app_copy_qml/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/build
-.PHONY : cluster_app_copy_qml/fast
+Chap3_3.1_copy_qml/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/build
+.PHONY : Chap3_3.1_copy_qml/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_copy_res
+# Target rules for targets named Chap3_3.1_copy_res
 
 # Build rule for target.
-cluster_app_copy_res: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_copy_res
-.PHONY : cluster_app_copy_res
+Chap3_3.1_copy_res: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_copy_res
+.PHONY : Chap3_3.1_copy_res
 
 # fast build rule for target.
-cluster_app_copy_res/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/build
-.PHONY : cluster_app_copy_res/fast
+Chap3_3.1_copy_res/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/build
+.PHONY : Chap3_3.1_copy_res/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_qmlimportscan
+# Target rules for targets named Chap3_3.1_qmlimportscan
 
 # Build rule for target.
-cluster_app_qmlimportscan: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_qmlimportscan
-.PHONY : cluster_app_qmlimportscan
+Chap3_3.1_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_qmlimportscan
+.PHONY : Chap3_3.1_qmlimportscan
 
 # fast build rule for target.
-cluster_app_qmlimportscan/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/build
-.PHONY : cluster_app_qmlimportscan/fast
+Chap3_3.1_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/build
+.PHONY : Chap3_3.1_qmlimportscan/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_autogen_timestamp_deps
+# Target rules for targets named Chap3_3.1_autogen_timestamp_deps
 
 # Build rule for target.
-cluster_app_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_autogen_timestamp_deps
-.PHONY : cluster_app_autogen_timestamp_deps
+Chap3_3.1_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_autogen_timestamp_deps
+.PHONY : Chap3_3.1_autogen_timestamp_deps
 
 # fast build rule for target.
-cluster_app_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/build
-.PHONY : cluster_app_autogen_timestamp_deps/fast
+Chap3_3.1_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/build
+.PHONY : Chap3_3.1_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named cluster_app_autogen
+# Target rules for targets named Chap3_3.1_autogen
 
 # Build rule for target.
-cluster_app_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cluster_app_autogen
-.PHONY : cluster_app_autogen
+Chap3_3.1_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.1_autogen
+.PHONY : Chap3_3.1_autogen
 
 # fast build rule for target.
-cluster_app_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/build
-.PHONY : cluster_app_autogen/fast
+Chap3_3.1_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build
+.PHONY : Chap3_3.1_autogen/fast
 
 # Help Target
 help:
@@ -371,25 +371,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Chap3_3.1_autogen"
+	@echo "... Chap3_3.1_autogen_timestamp_deps"
+	@echo "... Chap3_3.1_copy_qml"
+	@echo "... Chap3_3.1_copy_res"
+	@echo "... Chap3_3.1_qmlimportscan"
+	@echo "... Chap3_3.1_qmllint"
+	@echo "... Chap3_3.1_qmllint_json"
+	@echo "... Chap3_3.1_qmllint_module"
+	@echo "... Chap3_3.1_qmltyperegistration"
 	@echo "... all_aotstats"
 	@echo "... all_qmllint"
 	@echo "... all_qmllint_json"
 	@echo "... all_qmllint_module"
 	@echo "... all_qmltyperegistrations"
 	@echo "... clean_qml_context_properties"
-	@echo "... cluster_app_autogen"
-	@echo "... cluster_app_autogen_timestamp_deps"
-	@echo "... cluster_app_copy_qml"
-	@echo "... cluster_app_copy_res"
-	@echo "... cluster_app_qmlimportscan"
-	@echo "... cluster_app_qmllint"
-	@echo "... cluster_app_qmllint_json"
-	@echo "... cluster_app_qmllint_module"
-	@echo "... cluster_app_qmltyperegistration"
 	@echo "... dump_qml_context_properties"
 	@echo "... generate_qmlls_build_ini_file"
-	@echo "... module_cluster_app_aotstats_target"
-	@echo "... cluster_app"
+	@echo "... module_Chap3_3.1_aotstats_target"
+	@echo "... Chap3_3.1"
 .PHONY : help
 
 

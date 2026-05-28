@@ -7,20 +7,6 @@ apps/cluster_app/cluster_app_autogen/timestamp: /home/gooner/Documents/Automotiv
   /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
   /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
   /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
-  /home/gooner/Qt6/Tools/CMake/bin/cmake \
-  /home/gooner/Documents/AutomotiveCockpitWorkspace/apps/cluster_app/CMakeLists.txt \
-  /home/gooner/Documents/AutomotiveCockpitWorkspace/apps/cluster_app/src/main.cpp \
-  apps/cluster_app/.qt/qml_imports/cluster_app_conf.cmake \
-  /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
-  /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
-  /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
-  /home/gooner/Qt6/Tools/CMake/bin/cmake \
-  /home/gooner/Documents/AutomotiveCockpitWorkspace/apps/cluster_app/CMakeLists.txt \
-  /home/gooner/Documents/AutomotiveCockpitWorkspace/apps/cluster_app/src/main.cpp \
-  apps/cluster_app/.qt/qml_imports/cluster_app_conf.cmake \
-  /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
-  /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
-  /home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
   /home/gooner/Qt6/Tools/CMake/bin/cmake
 
 apps/cluster_app/CMakeFiles/cluster_app.dir/.qt/rcc/qrc_cluster_app_raw_qml_0.cpp.o: apps/cluster_app/.qt/rcc/qrc_cluster_app_raw_qml_0.cpp \
@@ -1354,6 +1340,7 @@ apps/cluster_app/CMakeFiles/cluster_app.dir/cluster_app_qmltyperegistrations.cpp
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
 
 apps/cluster_app/CMakeFiles/cluster_app.dir/src/main.cpp.o: /home/gooner/Documents/AutomotiveCockpitWorkspace/apps/cluster_app/src/main.cpp \
+  /home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/QDebug \
   /home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/q17memory.h \
   /home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/q20bit.h \
   /home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/q20functional.h \
@@ -1821,6 +1808,8 @@ apps/cluster_app/CMakeFiles/cluster_app.dir/src/main.cpp.o: /home/gooner/Documen
 /home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/qdeadlinetimer.h:
 
 /home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/qcoreapplication.h:
+
+/home/gooner/Qt6/6.11.1/gcc_64/include/QtCore/QDebug:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 

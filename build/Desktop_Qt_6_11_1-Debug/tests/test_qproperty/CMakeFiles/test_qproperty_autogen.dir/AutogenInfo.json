@@ -1,0 +1,98 @@
+{
+	"BUILD_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty/test_qproperty_autogen",
+	"CMAKE_BINARY_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/tests/test_qproperty",
+	"CMAKE_EXECUTABLE" : "/home/gooner/Qt6/Tools/CMake/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/tests/test_qproperty/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty/test_qproperty_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "test_qproperty_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/gooner/Documents/AutomotiveCockpitWorkspace/tests/test_qproperty/engine.h",
+			"MU",
+			"EWIEGA46WW/moc_engine.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty/test_qproperty_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty/test_qproperty_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_QML_DEBUG" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtCore",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include",
+		"/home/gooner/Qt6/6.11.1/gcc_64/mkspecs/linux-g++",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/bin/g++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/home/gooner/Qt6/Tools/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty/test_qproperty_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty/CMakeFiles/test_qproperty_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/gooner/Qt6/6.11.1/gcc_64/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/tests/test_qproperty/CMakeFiles/test_qproperty_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/gooner/Documents/AutomotiveCockpitWorkspace/tests/test_qproperty/engine.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/gooner/Documents/AutomotiveCockpitWorkspace/tests/test_qproperty/main.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

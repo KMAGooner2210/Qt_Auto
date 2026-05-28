@@ -21,8 +21,11 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick)
 
 #3. Add thu muc chua cac ung dung chinh
 
-add_subdirectory(apps/cluster_app)
+#add_subdirectory(apps/cluster_app)
+#add_subdirectory(tests/test_memory_leak)
+#add_subdirectory(tests/test_signal_slot)
+#add_subdirectory(tests/test_qproperty)
 #add_subdirectory(apps/ivi_app)
 #add_subdirectory(apps/wayland_compositor)
-
+add_subdirectory(Chap3_qml_basics)
 

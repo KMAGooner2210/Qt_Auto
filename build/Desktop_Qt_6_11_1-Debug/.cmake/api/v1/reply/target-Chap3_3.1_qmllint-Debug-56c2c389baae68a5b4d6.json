@@ -1,0 +1,105 @@
+{
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module"
+		],
+		"files" : 
+		[
+			"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Chap3_qml_basics/3.1_layout/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1507,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1035,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3717,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1734,
+				"parent" : 4
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "all_qmltyperegistrations::@e6d5c1d33f5d7bcd0235"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "/QmlLinter"
+	},
+	"id" : "Chap3_3.1_qmllint::@e6d5c1d33f5d7bcd0235",
+	"name" : "Chap3_3.1_qmllint",
+	"paths" : 
+	{
+		"build" : "Chap3_qml_basics/3.1_layout",
+		"source" : "Chap3_qml_basics/3.1_layout"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

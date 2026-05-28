@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Chap3_3_1_Module/">
+    <file alias="qml/Main.qml">/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap3_qml_basics/3.1_layout/qml/Main.qml</file>
+  </qresource>
+</RCC>
+

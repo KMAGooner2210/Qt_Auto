@@ -1,0 +1,1 @@
+/bin/g++ -g CMakeFiles/test_qproperty.dir/test_qproperty_autogen/mocs_compilation.cpp.o CMakeFiles/test_qproperty.dir/main.cpp.o CMakeFiles/test_qproperty.dir/engine.cpp.o -o test_qproperty  -Wl,-rpath,/home/gooner/Qt6/6.11.1/gcc_64/lib /home/gooner/Qt6/6.11.1/gcc_64/lib/libQt6Core.so.6.11.1

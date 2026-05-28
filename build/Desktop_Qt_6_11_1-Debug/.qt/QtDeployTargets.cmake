@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_cluster_app_FILE /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/apps/cluster_app/cluster_app)
-set(__QT_DEPLOY_TARGET_cluster_app_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_Chap3_3.1_FILE /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/Chap3_3.1)
+set(__QT_DEPLOY_TARGET_Chap3_3.1_TYPE EXECUTABLE)

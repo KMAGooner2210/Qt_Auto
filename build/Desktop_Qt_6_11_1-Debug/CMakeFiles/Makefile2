@@ -63,49 +63,64 @@ CMAKE_BINARY_DIR = /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Deskt
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: apps/cluster_app/all
+all: Chap3_qml_basics/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: apps/cluster_app/preinstall
+preinstall: Chap3_qml_basics/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/generate_qmlls_build_ini_file.dir/clean
-clean: CMakeFiles/module_cluster_app_aotstats_target.dir/clean
+clean: CMakeFiles/module_Chap3_3.1_aotstats_target.dir/clean
 clean: CMakeFiles/all_aotstats.dir/clean
-clean: apps/cluster_app/clean
+clean: Chap3_qml_basics/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory apps/cluster_app
+# Directory level rules for directory Chap3_qml_basics
 
 # Recursive "all" directory target.
-apps/cluster_app/all: apps/cluster_app/CMakeFiles/cluster_app.dir/all
-.PHONY : apps/cluster_app/all
+Chap3_qml_basics/all: Chap3_qml_basics/3.1_layout/all
+.PHONY : Chap3_qml_basics/all
 
 # Recursive "preinstall" directory target.
-apps/cluster_app/preinstall:
-.PHONY : apps/cluster_app/preinstall
+Chap3_qml_basics/preinstall: Chap3_qml_basics/3.1_layout/preinstall
+.PHONY : Chap3_qml_basics/preinstall
 
 # Recursive "clean" directory target.
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/all_qmllint.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/all_qmllint_json.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/all_qmllint_module.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/clean
-apps/cluster_app/clean: apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/clean
-.PHONY : apps/cluster_app/clean
+Chap3_qml_basics/clean: Chap3_qml_basics/3.1_layout/clean
+.PHONY : Chap3_qml_basics/clean
+
+#=============================================================================
+# Directory level rules for directory Chap3_qml_basics/3.1_layout
+
+# Recursive "all" directory target.
+Chap3_qml_basics/3.1_layout/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all
+.PHONY : Chap3_qml_basics/3.1_layout/all
+
+# Recursive "preinstall" directory target.
+Chap3_qml_basics/3.1_layout/preinstall:
+.PHONY : Chap3_qml_basics/3.1_layout/preinstall
+
+# Recursive "clean" directory target.
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/clean
+Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/generate_qmlls_build_ini_file.dir
@@ -134,39 +149,39 @@ CMakeFiles/generate_qmlls_build_ini_file.dir/clean:
 .PHONY : CMakeFiles/generate_qmlls_build_ini_file.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/module_cluster_app_aotstats_target.dir
+# Target rules for target CMakeFiles/module_Chap3_3.1_aotstats_target.dir
 
 # All Build rule for target.
-CMakeFiles/module_cluster_app_aotstats_target.dir/all: apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_cluster_app_aotstats_target.dir/build.make CMakeFiles/module_cluster_app_aotstats_target.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_cluster_app_aotstats_target.dir/build.make CMakeFiles/module_cluster_app_aotstats_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=31 "Built target module_cluster_app_aotstats_target"
-.PHONY : CMakeFiles/module_cluster_app_aotstats_target.dir/all
+CMakeFiles/module_Chap3_3.1_aotstats_target.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.1_aotstats_target.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=31 "Built target module_Chap3_3.1_aotstats_target"
+.PHONY : CMakeFiles/module_Chap3_3.1_aotstats_target.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/module_cluster_app_aotstats_target.dir/rule: cmake_check_build_system
+CMakeFiles/module_Chap3_3.1_aotstats_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/module_cluster_app_aotstats_target.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/module_Chap3_3.1_aotstats_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : CMakeFiles/module_cluster_app_aotstats_target.dir/rule
+.PHONY : CMakeFiles/module_Chap3_3.1_aotstats_target.dir/rule
 
 # Convenience name for target.
-module_cluster_app_aotstats_target: CMakeFiles/module_cluster_app_aotstats_target.dir/rule
-.PHONY : module_cluster_app_aotstats_target
+module_Chap3_3.1_aotstats_target: CMakeFiles/module_Chap3_3.1_aotstats_target.dir/rule
+.PHONY : module_Chap3_3.1_aotstats_target
 
 # clean rule for target.
-CMakeFiles/module_cluster_app_aotstats_target.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_cluster_app_aotstats_target.dir/build.make CMakeFiles/module_cluster_app_aotstats_target.dir/clean
-.PHONY : CMakeFiles/module_cluster_app_aotstats_target.dir/clean
+CMakeFiles/module_Chap3_3.1_aotstats_target.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.1_aotstats_target.dir/clean
+.PHONY : CMakeFiles/module_Chap3_3.1_aotstats_target.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/all_aotstats.dir
 
 # All Build rule for target.
-CMakeFiles/all_aotstats.dir/all: CMakeFiles/module_cluster_app_aotstats_target.dir/all
+CMakeFiles/all_aotstats.dir/all: CMakeFiles/module_Chap3_3.1_aotstats_target.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_aotstats.dir/build.make CMakeFiles/all_aotstats.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_aotstats.dir/build.make CMakeFiles/all_aotstats.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=1 "Built target all_aotstats"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=27 "Built target all_aotstats"
 .PHONY : CMakeFiles/all_aotstats.dir/all
 
 # Build rule for subdir invocation for target.
@@ -186,428 +201,428 @@ CMakeFiles/all_aotstats.dir/clean:
 .PHONY : CMakeFiles/all_aotstats.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
-apps/cluster_app/CMakeFiles/cluster_app.dir/all: apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/all
-apps/cluster_app/CMakeFiles/cluster_app.dir/all: apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/all
-apps/cluster_app/CMakeFiles/cluster_app.dir/all: apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/all
-apps/cluster_app/CMakeFiles/cluster_app.dir/all: apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all
-apps/cluster_app/CMakeFiles/cluster_app.dir/all: apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app.dir/build.make apps/cluster_app/CMakeFiles/cluster_app.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app.dir/build.make apps/cluster_app/CMakeFiles/cluster_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target cluster_app"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target Chap3_3.1"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/rule
 
 # Convenience name for target.
-cluster_app: apps/cluster_app/CMakeFiles/cluster_app.dir/rule
-.PHONY : cluster_app
+Chap3_3.1: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/rule
+.PHONY : Chap3_3.1
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app.dir/build.make apps/cluster_app/CMakeFiles/cluster_app.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/all: apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=24,25,26,27,28 "Built target cluster_app_qmltyperegistration"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=22,23,24,25,26 "Built target Chap3_3.1_qmltyperegistration"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/rule
 
 # Convenience name for target.
-cluster_app_qmltyperegistration: apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/rule
-.PHONY : cluster_app_qmltyperegistration
+Chap3_3.1_qmltyperegistration: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/rule
+.PHONY : Chap3_3.1_qmltyperegistration
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/all: apps/cluster_app/CMakeFiles/cluster_app_qmltyperegistration.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/build.make apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/build.make apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/build
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmltyperegistrations"
-.PHONY : apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/all
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/rule
 
 # Convenience name for target.
-all_qmltyperegistrations: apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/rule
+all_qmltyperegistrations: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/rule
 .PHONY : all_qmltyperegistrations
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/build.make apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/all: apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target cluster_app_qmllint"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.1_qmllint"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/rule
 
 # Convenience name for target.
-cluster_app_qmllint: apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/rule
-.PHONY : cluster_app_qmllint
+Chap3_3.1_qmllint: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/rule
+.PHONY : Chap3_3.1_qmllint
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/all: apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target cluster_app_qmllint_json"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.1_qmllint_json"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/rule
 
 # Convenience name for target.
-cluster_app_qmllint_json: apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/rule
-.PHONY : cluster_app_qmllint_json
+Chap3_3.1_qmllint_json: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/rule
+.PHONY : Chap3_3.1_qmllint_json
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/all: apps/cluster_app/CMakeFiles/all_qmltyperegistrations.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target cluster_app_qmllint_module"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.1_qmllint_module"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/rule
 
 # Convenience name for target.
-cluster_app_qmllint_module: apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/rule
-.PHONY : cluster_app_qmllint_module
+Chap3_3.1_qmllint_module: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/rule
+.PHONY : Chap3_3.1_qmllint_module
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/all_qmllint.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/all_qmllint.dir/all: apps/cluster_app/CMakeFiles/cluster_app_qmllint.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint.dir/build
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmllint"
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint.dir/all
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/all_qmllint.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/all_qmllint.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/rule
 
 # Convenience name for target.
-all_qmllint: apps/cluster_app/CMakeFiles/all_qmllint.dir/rule
+all_qmllint: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/rule
 .PHONY : all_qmllint
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/all_qmllint.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/all_qmllint_json.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/all_qmllint_json.dir/all: apps/cluster_app/CMakeFiles/cluster_app_qmllint_json.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_json.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_json.dir/build
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmllint_json"
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint_json.dir/all
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/all_qmllint_json.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/all_qmllint_json.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint_json.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/rule
 
 # Convenience name for target.
-all_qmllint_json: apps/cluster_app/CMakeFiles/all_qmllint_json.dir/rule
+all_qmllint_json: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/rule
 .PHONY : all_qmllint_json
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/all_qmllint_json.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_json.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_json.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint_json.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/all_qmllint_module.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/all_qmllint_module.dir/all: apps/cluster_app/CMakeFiles/cluster_app_qmllint_module.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_module.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_module.dir/build
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmllint_module"
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint_module.dir/all
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/all_qmllint_module.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/all_qmllint_module.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint_module.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/rule
 
 # Convenience name for target.
-all_qmllint_module: apps/cluster_app/CMakeFiles/all_qmllint_module.dir/rule
+all_qmllint_module: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/rule
 .PHONY : all_qmllint_module
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/all_qmllint_module.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/all_qmllint_module.dir/build.make apps/cluster_app/CMakeFiles/all_qmllint_module.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/all_qmllint_module.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/all:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/build
+Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=29 "Built target dump_qml_context_properties"
-.PHONY : apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/all
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/rule
 
 # Convenience name for target.
-dump_qml_context_properties: apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/rule
+dump_qml_context_properties: Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/rule
 .PHONY : dump_qml_context_properties
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/dump_qml_context_properties.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/all:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=2 "Built target clean_qml_context_properties"
-.PHONY : apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=28 "Built target clean_qml_context_properties"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/rule
 
 # Convenience name for target.
-clean_qml_context_properties: apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/rule
+clean_qml_context_properties: Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/rule
 .PHONY : clean_qml_context_properties
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/build.make apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/clean_qml_context_properties.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/all:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=21 "Built target cluster_app_copy_qml"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=19 "Built target Chap3_3.1_copy_qml"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/rule
 
 # Convenience name for target.
-cluster_app_copy_qml: apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/rule
-.PHONY : cluster_app_copy_qml
+Chap3_3.1_copy_qml: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/rule
+.PHONY : Chap3_3.1_copy_qml
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/all:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=22 "Built target cluster_app_copy_res"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=20 "Built target Chap3_3.1_copy_res"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/rule
 
 # Convenience name for target.
-cluster_app_copy_res: apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/rule
-.PHONY : cluster_app_copy_res
+Chap3_3.1_copy_res: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/rule
+.PHONY : Chap3_3.1_copy_res
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/all:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=23 "Built target cluster_app_qmlimportscan"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=21 "Built target Chap3_3.1_qmlimportscan"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/rule
 
 # Convenience name for target.
-cluster_app_qmlimportscan: apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/rule
-.PHONY : cluster_app_qmlimportscan
+Chap3_3.1_qmlimportscan: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/rule
+.PHONY : Chap3_3.1_qmlimportscan
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
-apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all: apps/cluster_app/CMakeFiles/cluster_app_copy_qml.dir/all
-apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all: apps/cluster_app/CMakeFiles/cluster_app_copy_res.dir/all
-apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all: apps/cluster_app/CMakeFiles/cluster_app_qmlimportscan.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target cluster_app_autogen_timestamp_deps"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_qml.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_copy_res.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmlimportscan.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.1_autogen_timestamp_deps"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
-cluster_app_autogen_timestamp_deps: apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/rule
-.PHONY : cluster_app_autogen_timestamp_deps
+Chap3_3.1_autogen_timestamp_deps: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/rule
+.PHONY : Chap3_3.1_autogen_timestamp_deps
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/clean
 
 #=============================================================================
-# Target rules for target apps/cluster_app/CMakeFiles/cluster_app_autogen.dir
+# Target rules for target Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir
 
 # All Build rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/all: apps/cluster_app/CMakeFiles/cluster_app_autogen_timestamp_deps.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=20 "Built target cluster_app_autogen"
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=18 "Built target Chap3_3.1_autogen"
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/all
 
 # Build rule for subdir invocation for target.
-apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/rule: cmake_check_build_system
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/rule
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/rule
 
 # Convenience name for target.
-cluster_app_autogen: apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/rule
-.PHONY : cluster_app_autogen
+Chap3_3.1_autogen: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/rule
+.PHONY : Chap3_3.1_autogen
 
 # clean rule for target.
-apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/build.make apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/clean
-.PHONY : apps/cluster_app/CMakeFiles/cluster_app_autogen.dir/clean
+Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/clean
+.PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

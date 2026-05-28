@@ -1,0 +1,14 @@
+--bare
+-I
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout
+-I
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/Chap3_3_1_Module
+-I
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout
+-I
+/home/gooner/Qt6/6.11.1/gcc_64/qml
+--resource
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/.qt/rcc/qmake_Chap3_3_1_Module.qrc
+--resource
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/.qt/rcc/Chap3_3_1_raw_qml_0.qrc
+/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap3_qml_basics/3.1_layout/qml/Main.qml

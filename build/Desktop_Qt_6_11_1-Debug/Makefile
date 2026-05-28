@@ -143,6 +143,32 @@ module_Chap3_3.1_aotstats_target/fast:
 .PHONY : module_Chap3_3.1_aotstats_target/fast
 
 #=============================================================================
+# Target rules for targets named module_Chap3_3.2_aotstats_target
+
+# Build rule for target.
+module_Chap3_3.2_aotstats_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_Chap3_3.2_aotstats_target
+.PHONY : module_Chap3_3.2_aotstats_target
+
+# fast build rule for target.
+module_Chap3_3.2_aotstats_target/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.2_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.2_aotstats_target.dir/build
+.PHONY : module_Chap3_3.2_aotstats_target/fast
+
+#=============================================================================
+# Target rules for targets named module_Chap3_3.3_aotstats_target
+
+# Build rule for target.
+module_Chap3_3.3_aotstats_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_Chap3_3.3_aotstats_target
+.PHONY : module_Chap3_3.3_aotstats_target
+
+# fast build rule for target.
+module_Chap3_3.3_aotstats_target/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.3_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.3_aotstats_target.dir/build
+.PHONY : module_Chap3_3.3_aotstats_target/fast
+
+#=============================================================================
 # Target rules for targets named all_aotstats
 
 # Build rule for target.
@@ -363,6 +389,266 @@ Chap3_3.1_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build
 .PHONY : Chap3_3.1_autogen/fast
 
+#=============================================================================
+# Target rules for targets named Chap3_3.2
+
+# Build rule for target.
+Chap3_3.2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2
+.PHONY : Chap3_3.2
+
+# fast build rule for target.
+Chap3_3.2/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/build
+.PHONY : Chap3_3.2/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_qmltyperegistration
+
+# Build rule for target.
+Chap3_3.2_qmltyperegistration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_qmltyperegistration
+.PHONY : Chap3_3.2_qmltyperegistration
+
+# fast build rule for target.
+Chap3_3.2_qmltyperegistration/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/build
+.PHONY : Chap3_3.2_qmltyperegistration/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_qmllint
+
+# Build rule for target.
+Chap3_3.2_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_qmllint
+.PHONY : Chap3_3.2_qmllint
+
+# fast build rule for target.
+Chap3_3.2_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/build
+.PHONY : Chap3_3.2_qmllint/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_qmllint_json
+
+# Build rule for target.
+Chap3_3.2_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_qmllint_json
+.PHONY : Chap3_3.2_qmllint_json
+
+# fast build rule for target.
+Chap3_3.2_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/build
+.PHONY : Chap3_3.2_qmllint_json/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_qmllint_module
+
+# Build rule for target.
+Chap3_3.2_qmllint_module: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_qmllint_module
+.PHONY : Chap3_3.2_qmllint_module
+
+# fast build rule for target.
+Chap3_3.2_qmllint_module/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/build
+.PHONY : Chap3_3.2_qmllint_module/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_copy_qml
+
+# Build rule for target.
+Chap3_3.2_copy_qml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_copy_qml
+.PHONY : Chap3_3.2_copy_qml
+
+# fast build rule for target.
+Chap3_3.2_copy_qml/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/build
+.PHONY : Chap3_3.2_copy_qml/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_copy_res
+
+# Build rule for target.
+Chap3_3.2_copy_res: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_copy_res
+.PHONY : Chap3_3.2_copy_res
+
+# fast build rule for target.
+Chap3_3.2_copy_res/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/build
+.PHONY : Chap3_3.2_copy_res/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_qmlimportscan
+
+# Build rule for target.
+Chap3_3.2_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_qmlimportscan
+.PHONY : Chap3_3.2_qmlimportscan
+
+# fast build rule for target.
+Chap3_3.2_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/build
+.PHONY : Chap3_3.2_qmlimportscan/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_autogen_timestamp_deps
+
+# Build rule for target.
+Chap3_3.2_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_autogen_timestamp_deps
+.PHONY : Chap3_3.2_autogen_timestamp_deps
+
+# fast build rule for target.
+Chap3_3.2_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/build
+.PHONY : Chap3_3.2_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.2_autogen
+
+# Build rule for target.
+Chap3_3.2_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.2_autogen
+.PHONY : Chap3_3.2_autogen
+
+# fast build rule for target.
+Chap3_3.2_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/build
+.PHONY : Chap3_3.2_autogen/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3
+
+# Build rule for target.
+Chap3_3.3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3
+.PHONY : Chap3_3.3
+
+# fast build rule for target.
+Chap3_3.3/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/build
+.PHONY : Chap3_3.3/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_qmltyperegistration
+
+# Build rule for target.
+Chap3_3.3_qmltyperegistration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_qmltyperegistration
+.PHONY : Chap3_3.3_qmltyperegistration
+
+# fast build rule for target.
+Chap3_3.3_qmltyperegistration/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/build
+.PHONY : Chap3_3.3_qmltyperegistration/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_qmllint
+
+# Build rule for target.
+Chap3_3.3_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_qmllint
+.PHONY : Chap3_3.3_qmllint
+
+# fast build rule for target.
+Chap3_3.3_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/build
+.PHONY : Chap3_3.3_qmllint/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_qmllint_json
+
+# Build rule for target.
+Chap3_3.3_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_qmllint_json
+.PHONY : Chap3_3.3_qmllint_json
+
+# fast build rule for target.
+Chap3_3.3_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/build
+.PHONY : Chap3_3.3_qmllint_json/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_qmllint_module
+
+# Build rule for target.
+Chap3_3.3_qmllint_module: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_qmllint_module
+.PHONY : Chap3_3.3_qmllint_module
+
+# fast build rule for target.
+Chap3_3.3_qmllint_module/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/build
+.PHONY : Chap3_3.3_qmllint_module/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_copy_qml
+
+# Build rule for target.
+Chap3_3.3_copy_qml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_copy_qml
+.PHONY : Chap3_3.3_copy_qml
+
+# fast build rule for target.
+Chap3_3.3_copy_qml/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/build
+.PHONY : Chap3_3.3_copy_qml/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_copy_res
+
+# Build rule for target.
+Chap3_3.3_copy_res: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_copy_res
+.PHONY : Chap3_3.3_copy_res
+
+# fast build rule for target.
+Chap3_3.3_copy_res/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/build
+.PHONY : Chap3_3.3_copy_res/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_qmlimportscan
+
+# Build rule for target.
+Chap3_3.3_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_qmlimportscan
+.PHONY : Chap3_3.3_qmlimportscan
+
+# fast build rule for target.
+Chap3_3.3_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/build
+.PHONY : Chap3_3.3_qmlimportscan/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_autogen_timestamp_deps
+
+# Build rule for target.
+Chap3_3.3_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_autogen_timestamp_deps
+.PHONY : Chap3_3.3_autogen_timestamp_deps
+
+# fast build rule for target.
+Chap3_3.3_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/build
+.PHONY : Chap3_3.3_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named Chap3_3.3_autogen
+
+# Build rule for target.
+Chap3_3.3_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_3.3_autogen
+.PHONY : Chap3_3.3_autogen
+
+# fast build rule for target.
+Chap3_3.3_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/build
+.PHONY : Chap3_3.3_autogen/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -380,6 +666,24 @@ help:
 	@echo "... Chap3_3.1_qmllint_json"
 	@echo "... Chap3_3.1_qmllint_module"
 	@echo "... Chap3_3.1_qmltyperegistration"
+	@echo "... Chap3_3.2_autogen"
+	@echo "... Chap3_3.2_autogen_timestamp_deps"
+	@echo "... Chap3_3.2_copy_qml"
+	@echo "... Chap3_3.2_copy_res"
+	@echo "... Chap3_3.2_qmlimportscan"
+	@echo "... Chap3_3.2_qmllint"
+	@echo "... Chap3_3.2_qmllint_json"
+	@echo "... Chap3_3.2_qmllint_module"
+	@echo "... Chap3_3.2_qmltyperegistration"
+	@echo "... Chap3_3.3_autogen"
+	@echo "... Chap3_3.3_autogen_timestamp_deps"
+	@echo "... Chap3_3.3_copy_qml"
+	@echo "... Chap3_3.3_copy_res"
+	@echo "... Chap3_3.3_qmlimportscan"
+	@echo "... Chap3_3.3_qmllint"
+	@echo "... Chap3_3.3_qmllint_json"
+	@echo "... Chap3_3.3_qmllint_module"
+	@echo "... Chap3_3.3_qmltyperegistration"
 	@echo "... all_aotstats"
 	@echo "... all_qmllint"
 	@echo "... all_qmllint_json"
@@ -389,7 +693,11 @@ help:
 	@echo "... dump_qml_context_properties"
 	@echo "... generate_qmlls_build_ini_file"
 	@echo "... module_Chap3_3.1_aotstats_target"
+	@echo "... module_Chap3_3.2_aotstats_target"
+	@echo "... module_Chap3_3.3_aotstats_target"
 	@echo "... Chap3_3.1"
+	@echo "... Chap3_3.2"
+	@echo "... Chap3_3.3"
 .PHONY : help
 
 

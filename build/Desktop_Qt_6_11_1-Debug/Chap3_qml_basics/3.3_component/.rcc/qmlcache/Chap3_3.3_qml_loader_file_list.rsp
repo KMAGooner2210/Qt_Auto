@@ -1,0 +1,6 @@
+--resource
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/.qt/rcc/qmake_Chap3_3_3_Module.qrc
+--resource
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/.qt/rcc/Chap3_3_3_raw_qml_0.qrc
+/Chap3_3_3_Module/qml/Main.qml
+/Chap3_3_3_Module/qml/GaugeRing.qml

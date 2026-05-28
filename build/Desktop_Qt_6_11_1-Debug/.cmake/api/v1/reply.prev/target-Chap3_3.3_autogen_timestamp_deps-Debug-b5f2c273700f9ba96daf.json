@@ -1,0 +1,89 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_dependencies",
+			"_qt_internal_qml_copy_files_to_build_dir",
+			"qt6_add_qml_module",
+			"qt_add_qml_module"
+		],
+		"files" : 
+		[
+			"Chap3_qml_basics/3.3_component/CMakeLists.txt",
+			"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1507,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1045,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 3223,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1051,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 3223,
+				"parent" : 5
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Chap3_3.3_copy_qml::@c209d8b54c2690e5fcbe"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "Chap3_3.3_copy_res::@c209d8b54c2690e5fcbe"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Chap3_3.3_qmlimportscan::@c209d8b54c2690e5fcbe"
+		}
+	],
+	"id" : "Chap3_3.3_autogen_timestamp_deps::@c209d8b54c2690e5fcbe",
+	"isGeneratorProvided" : true,
+	"name" : "Chap3_3.3_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Chap3_qml_basics/3.3_component",
+		"source" : "Chap3_qml_basics/3.3_component"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

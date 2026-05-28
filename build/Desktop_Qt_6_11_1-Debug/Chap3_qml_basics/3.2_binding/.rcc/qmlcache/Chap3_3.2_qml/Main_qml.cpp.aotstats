@@ -1,0 +1,135 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 19,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 21,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 13,
+                            "durationMicroseconds": 0,
+                            "functionName": "rotation",
+                            "line": 31,
+                            "message": "Cannot retrieve a non-object type by ID: speedSlider"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 10,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 32,
+                            "message": "Cannot retrieve a non-object type by ID: speedSlider"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 21,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 30,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 10,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 39,
+                            "message": "Cannot retrieve a non-object type by ID: speedSlider"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 43,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 38,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 10,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 49,
+                            "message": "Could not find property \"width\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 54,
+                            "message": "Could not find property \"bottom\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 56,
+                            "message": "Could not find property \"horizontalCenter\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 9,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 60,
+                            "message": "Cannot retrieve a non-object type by ID: speedSlider"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 10,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 61,
+                            "message": "Cannot retrieve a non-object type by ID: speedSlider"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 64,
+                            "message": "Cannot retrieve a non-object type by ID: speedSlider"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 66,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap3_qml_basics/3.2_binding/qml/Main.qml"
+                }
+            ],
+            "moduleId": "Chap3_3_2_Module(Chap3_3.2)"
+        }
+    ]
+}

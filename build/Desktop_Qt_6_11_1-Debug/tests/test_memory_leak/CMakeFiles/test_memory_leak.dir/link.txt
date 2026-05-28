@@ -1,1 +1,0 @@
-/bin/g++ -g CMakeFiles/test_memory_leak.dir/test_memory_leak_autogen/mocs_compilation.cpp.o CMakeFiles/test_memory_leak.dir/main.cpp.o CMakeFiles/test_memory_leak.dir/node.cpp.o -o test_memory_leak  -Wl,-rpath,/home/gooner/Qt6/6.11.1/gcc_64/lib /home/gooner/Qt6/6.11.1/gcc_64/lib/libQt6Core.so.6.11.1

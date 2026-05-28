@@ -73,6 +73,8 @@ preinstall: Chap3_qml_basics/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/generate_qmlls_build_ini_file.dir/clean
 clean: CMakeFiles/module_Chap3_3.1_aotstats_target.dir/clean
+clean: CMakeFiles/module_Chap3_3.2_aotstats_target.dir/clean
+clean: CMakeFiles/module_Chap3_3.3_aotstats_target.dir/clean
 clean: CMakeFiles/all_aotstats.dir/clean
 clean: Chap3_qml_basics/clean
 .PHONY : clean
@@ -82,14 +84,20 @@ clean: Chap3_qml_basics/clean
 
 # Recursive "all" directory target.
 Chap3_qml_basics/all: Chap3_qml_basics/3.1_layout/all
+Chap3_qml_basics/all: Chap3_qml_basics/3.2_binding/all
+Chap3_qml_basics/all: Chap3_qml_basics/3.3_component/all
 .PHONY : Chap3_qml_basics/all
 
 # Recursive "preinstall" directory target.
 Chap3_qml_basics/preinstall: Chap3_qml_basics/3.1_layout/preinstall
+Chap3_qml_basics/preinstall: Chap3_qml_basics/3.2_binding/preinstall
+Chap3_qml_basics/preinstall: Chap3_qml_basics/3.3_component/preinstall
 .PHONY : Chap3_qml_basics/preinstall
 
 # Recursive "clean" directory target.
 Chap3_qml_basics/clean: Chap3_qml_basics/3.1_layout/clean
+Chap3_qml_basics/clean: Chap3_qml_basics/3.2_binding/clean
+Chap3_qml_basics/clean: Chap3_qml_basics/3.3_component/clean
 .PHONY : Chap3_qml_basics/clean
 
 #=============================================================================
@@ -123,13 +131,61 @@ Chap3_qml_basics/3.1_layout/clean: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_
 .PHONY : Chap3_qml_basics/3.1_layout/clean
 
 #=============================================================================
+# Directory level rules for directory Chap3_qml_basics/3.2_binding
+
+# Recursive "all" directory target.
+Chap3_qml_basics/3.2_binding/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all
+.PHONY : Chap3_qml_basics/3.2_binding/all
+
+# Recursive "preinstall" directory target.
+Chap3_qml_basics/3.2_binding/preinstall:
+.PHONY : Chap3_qml_basics/3.2_binding/preinstall
+
+# Recursive "clean" directory target.
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/clean
+Chap3_qml_basics/3.2_binding/clean: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/clean
+
+#=============================================================================
+# Directory level rules for directory Chap3_qml_basics/3.3_component
+
+# Recursive "all" directory target.
+Chap3_qml_basics/3.3_component/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all
+.PHONY : Chap3_qml_basics/3.3_component/all
+
+# Recursive "preinstall" directory target.
+Chap3_qml_basics/3.3_component/preinstall:
+.PHONY : Chap3_qml_basics/3.3_component/preinstall
+
+# Recursive "clean" directory target.
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/clean
+Chap3_qml_basics/3.3_component/clean: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/generate_qmlls_build_ini_file.dir
 
 # All Build rule for target.
 CMakeFiles/generate_qmlls_build_ini_file.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_qmlls_build_ini_file.dir/build.make CMakeFiles/generate_qmlls_build_ini_file.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_qmlls_build_ini_file.dir/build.make CMakeFiles/generate_qmlls_build_ini_file.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=30 "Built target generate_qmlls_build_ini_file"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=84 "Built target generate_qmlls_build_ini_file"
 .PHONY : CMakeFiles/generate_qmlls_build_ini_file.dir/all
 
 # Build rule for subdir invocation for target.
@@ -155,7 +211,7 @@ CMakeFiles/generate_qmlls_build_ini_file.dir/clean:
 CMakeFiles/module_Chap3_3.1_aotstats_target.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.1_aotstats_target.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.1_aotstats_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=31 "Built target module_Chap3_3.1_aotstats_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=85 "Built target module_Chap3_3.1_aotstats_target"
 .PHONY : CMakeFiles/module_Chap3_3.1_aotstats_target.dir/all
 
 # Build rule for subdir invocation for target.
@@ -175,18 +231,72 @@ CMakeFiles/module_Chap3_3.1_aotstats_target.dir/clean:
 .PHONY : CMakeFiles/module_Chap3_3.1_aotstats_target.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/module_Chap3_3.2_aotstats_target.dir
+
+# All Build rule for target.
+CMakeFiles/module_Chap3_3.2_aotstats_target.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.2_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.2_aotstats_target.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.2_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.2_aotstats_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=86 "Built target module_Chap3_3.2_aotstats_target"
+.PHONY : CMakeFiles/module_Chap3_3.2_aotstats_target.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/module_Chap3_3.2_aotstats_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/module_Chap3_3.2_aotstats_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : CMakeFiles/module_Chap3_3.2_aotstats_target.dir/rule
+
+# Convenience name for target.
+module_Chap3_3.2_aotstats_target: CMakeFiles/module_Chap3_3.2_aotstats_target.dir/rule
+.PHONY : module_Chap3_3.2_aotstats_target
+
+# clean rule for target.
+CMakeFiles/module_Chap3_3.2_aotstats_target.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.2_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.2_aotstats_target.dir/clean
+.PHONY : CMakeFiles/module_Chap3_3.2_aotstats_target.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/module_Chap3_3.3_aotstats_target.dir
+
+# All Build rule for target.
+CMakeFiles/module_Chap3_3.3_aotstats_target.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.3_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.3_aotstats_target.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.3_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.3_aotstats_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=87 "Built target module_Chap3_3.3_aotstats_target"
+.PHONY : CMakeFiles/module_Chap3_3.3_aotstats_target.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/module_Chap3_3.3_aotstats_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/module_Chap3_3.3_aotstats_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : CMakeFiles/module_Chap3_3.3_aotstats_target.dir/rule
+
+# Convenience name for target.
+module_Chap3_3.3_aotstats_target: CMakeFiles/module_Chap3_3.3_aotstats_target.dir/rule
+.PHONY : module_Chap3_3.3_aotstats_target
+
+# clean rule for target.
+CMakeFiles/module_Chap3_3.3_aotstats_target.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_Chap3_3.3_aotstats_target.dir/build.make CMakeFiles/module_Chap3_3.3_aotstats_target.dir/clean
+.PHONY : CMakeFiles/module_Chap3_3.3_aotstats_target.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/all_aotstats.dir
 
 # All Build rule for target.
 CMakeFiles/all_aotstats.dir/all: CMakeFiles/module_Chap3_3.1_aotstats_target.dir/all
+CMakeFiles/all_aotstats.dir/all: CMakeFiles/module_Chap3_3.2_aotstats_target.dir/all
+CMakeFiles/all_aotstats.dir/all: CMakeFiles/module_Chap3_3.3_aotstats_target.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_aotstats.dir/build.make CMakeFiles/all_aotstats.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_aotstats.dir/build.make CMakeFiles/all_aotstats.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=27 "Built target all_aotstats"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=81 "Built target all_aotstats"
 .PHONY : CMakeFiles/all_aotstats.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/all_aotstats.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/all_aotstats.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : CMakeFiles/all_aotstats.dir/rule
@@ -262,6 +372,8 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/clean:
 
 # All Build rule for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmltyperegistration.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/all
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/depend
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmltyperegistrations"
@@ -269,7 +381,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all: Chap3_q
 
 # Build rule for subdir invocation for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/rule
@@ -295,7 +407,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/all: Chap3_qml_basi
 
 # Build rule for subdir invocation for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/rule
@@ -321,7 +433,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/all: Chap3_qml
 
 # Build rule for subdir invocation for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/rule
@@ -347,7 +459,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/all: Chap3_q
 
 # Build rule for subdir invocation for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/rule
@@ -366,6 +478,8 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/clean:
 
 # All Build rule for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/all
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/depend
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmllint"
@@ -373,7 +487,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all: Chap3_qml_basics/3.1
 
 # Build rule for subdir invocation for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/rule
@@ -392,6 +506,8 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint.dir/clean:
 
 # All Build rule for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_json.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/all
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/depend
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmllint_json"
@@ -399,7 +515,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all: Chap3_qml_basic
 
 # Build rule for subdir invocation for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/rule
@@ -418,6 +534,8 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_json.dir/clean:
 
 # All Build rule for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_qmllint_module.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/all
+Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/all
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/depend
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target all_qmllint_module"
@@ -425,7 +543,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all: Chap3_qml_bas
 
 # Build rule for subdir invocation for target.
 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/rule
@@ -446,7 +564,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmllint_module.dir/clean:
 Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/all:
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/depend
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=29 "Built target dump_qml_context_properties"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=83 "Built target dump_qml_context_properties"
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/all
 
 # Build rule for subdir invocation for target.
@@ -472,7 +590,7 @@ Chap3_qml_basics/3.1_layout/CMakeFiles/dump_qml_context_properties.dir/clean:
 Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/all:
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/depend
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=28 "Built target clean_qml_context_properties"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=82 "Built target clean_qml_context_properties"
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/clean_qml_context_properties.dir/all
 
 # Build rule for subdir invocation for target.
@@ -623,6 +741,542 @@ Chap3_3.1_autogen: Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/
 Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/build.make Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/clean
 .PHONY : Chap3_qml_basics/3.1_layout/CMakeFiles/Chap3_3.1_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target Chap3_3.2"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 22
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/rule
+
+# Convenience name for target.
+Chap3_3.2: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/rule
+.PHONY : Chap3_3.2
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=48,49,50,51,52 "Built target Chap3_3.2_qmltyperegistration"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_qmltyperegistration: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/rule
+.PHONY : Chap3_3.2_qmltyperegistration
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmltyperegistration.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.2_qmllint"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_qmllint: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/rule
+.PHONY : Chap3_3.2_qmllint
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.2_qmllint_json"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_qmllint_json: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/rule
+.PHONY : Chap3_3.2_qmllint_json
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_json.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.2_qmllint_module"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_qmllint_module: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/rule
+.PHONY : Chap3_3.2_qmllint_module
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmllint_module.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=45 "Built target Chap3_3.2_copy_qml"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_copy_qml: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/rule
+.PHONY : Chap3_3.2_copy_qml
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=46 "Built target Chap3_3.2_copy_res"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_copy_res: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/rule
+.PHONY : Chap3_3.2_copy_res
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=47 "Built target Chap3_3.2_qmlimportscan"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_qmlimportscan: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/rule
+.PHONY : Chap3_3.2_qmlimportscan
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_qml.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_copy_res.dir/all
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_qmlimportscan.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.2_autogen_timestamp_deps"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_autogen_timestamp_deps: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/rule
+.PHONY : Chap3_3.2_autogen_timestamp_deps
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/all: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=44 "Built target Chap3_3.2_autogen"
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/rule
+
+# Convenience name for target.
+Chap3_3.2_autogen: Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/rule
+.PHONY : Chap3_3.2_autogen
+
+# clean rule for target.
+Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/build.make Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/clean
+.PHONY : Chap3_qml_basics/3.2_binding/CMakeFiles/Chap3_3.2_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71 "Built target Chap3_3.3"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 24
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/rule
+
+# Convenience name for target.
+Chap3_3.3: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/rule
+.PHONY : Chap3_3.3
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=76,77,78,79,80 "Built target Chap3_3.3_qmltyperegistration"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_qmltyperegistration: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/rule
+.PHONY : Chap3_3.3_qmltyperegistration
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.3_qmllint"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_qmllint: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/rule
+.PHONY : Chap3_3.3_qmllint
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.3_qmllint_json"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_qmllint_json: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/rule
+.PHONY : Chap3_3.3_qmllint_json
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_json.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/all: Chap3_qml_basics/3.1_layout/CMakeFiles/all_qmltyperegistrations.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.3_qmllint_module"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_qmllint_module: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/rule
+.PHONY : Chap3_3.3_qmllint_module
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmllint_module.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=73 "Built target Chap3_3.3_copy_qml"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_copy_qml: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/rule
+.PHONY : Chap3_3.3_copy_qml
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=74 "Built target Chap3_3.3_copy_res"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_copy_res: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/rule
+.PHONY : Chap3_3.3_copy_res
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/all:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=75 "Built target Chap3_3.3_qmlimportscan"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_qmlimportscan: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/rule
+.PHONY : Chap3_3.3_qmlimportscan
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_qml.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_copy_res.dir/all
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmlimportscan.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num= "Built target Chap3_3.3_autogen_timestamp_deps"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_autogen_timestamp_deps: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/rule
+.PHONY : Chap3_3.3_autogen_timestamp_deps
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir
+
+# All Build rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/all: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=72 "Built target Chap3_3.3_autogen"
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles 0
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/rule
+
+# Convenience name for target.
+Chap3_3.3_autogen: Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/rule
+.PHONY : Chap3_3.3_autogen
+
+# clean rule for target.
+Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/build.make Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/clean
+.PHONY : Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

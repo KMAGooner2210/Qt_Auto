@@ -1,0 +1,14 @@
+-rootPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap3_qml_basics/3.2_binding
+-cmake-output
+-output-file
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.2_binding/.qt/qml_imports/Chap3_3.2_conf.cmake
+-importPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.2_binding
+-importPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.2_binding/Chap3_3_2_Module
+-importPath
+/home/gooner/Qt6/6.11.1/gcc_64/qml
+-qrcFiles
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.2_binding/.qt/rcc/qmake_Chap3_3_2_Module.qrc
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.2_binding/.qt/rcc/Chap3_3_2_raw_qml_0.qrc

@@ -1,6 +1,0 @@
-module ClusterAppModule
-typeinfo cluster_app.qmltypes
-prefer :/ClusterAppModule/
-Main 1.0 qml/Main.qml
-depends QtQuick
-

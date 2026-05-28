@@ -1,0 +1,129 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_qml_type_registration",
+			"qt6_add_qml_module",
+			"qt_add_qml_module"
+		],
+		"files" : 
+		[
+			"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Chap3_qml_basics/3.3_component/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1507,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 910,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4317,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "Chap3_3.3_autogen_timestamp_deps::@c209d8b54c2690e5fcbe"
+		}
+	],
+	"id" : "Chap3_3.3_qmltyperegistration::@c209d8b54c2690e5fcbe",
+	"name" : "Chap3_3.3_qmltyperegistration",
+	"paths" : 
+	{
+		"build" : "Chap3_qml_basics/3.3_component",
+		"source" : "Chap3_qml_basics/3.3_component"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_qmltyperegistration.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/chap3_3.3_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/meta_types/qt6chap3_3.3_metatypes.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/meta_types/qt6chap3_3.3_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/meta_types/Chap3_3.3_json_file_list.txt.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/Chap3_3.3_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

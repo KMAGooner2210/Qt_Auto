@@ -1,2 +1,6 @@
 set(__QT_DEPLOY_TARGET_Chap3_3.1_FILE /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/Chap3_3.1)
 set(__QT_DEPLOY_TARGET_Chap3_3.1_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_Chap3_3.2_FILE /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.2_binding/Chap3_3.2)
+set(__QT_DEPLOY_TARGET_Chap3_3.2_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_Chap3_3.3_FILE /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/Chap3_3.3)
+set(__QT_DEPLOY_TARGET_Chap3_3.3_TYPE EXECUTABLE)

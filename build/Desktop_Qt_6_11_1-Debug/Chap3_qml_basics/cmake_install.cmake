@@ -47,3 +47,13 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.1_layout/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.2_binding/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/cmake_install.cmake")
+endif()
+

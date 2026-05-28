@@ -70,6 +70,8 @@ CMakeFiles/all_aotstats: .rcc/qmlcache/all_aotstats.txt
 	/home/gooner/Qt6/Tools/CMake/bin/cmake -E cat /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/all_aotstats.txt
 
 .rcc/qmlcache/all_aotstats.aotstats: Chap3_qml_basics/3.1_layout/.rcc/qmlcache/module_Chap3_3.1.aotstats
+.rcc/qmlcache/all_aotstats.aotstats: Chap3_qml_basics/3.2_binding/.rcc/qmlcache/module_Chap3_3.2.aotstats
+.rcc/qmlcache/all_aotstats.aotstats: Chap3_qml_basics/3.3_component/.rcc/qmlcache/module_Chap3_3.3.aotstats
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/all_aotstats.aotstats, .rcc/qmlcache/all_aotstats.txt"
 	/home/gooner/Qt6/6.11.1/gcc_64/libexec/qmlaotstats aggregate /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/all_aotstats.aotstatslist /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/all_aotstats.aotstats
 	/home/gooner/Qt6/6.11.1/gcc_64/libexec/qmlaotstats format /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/all_aotstats.aotstats /home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/all_aotstats.txt

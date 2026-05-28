@@ -1,0 +1,7 @@
+module Chap3_3_3_Module
+typeinfo Chap3_3.3.qmltypes
+prefer :/Chap3_3_3_Module/
+Main 1.0 qml/Main.qml
+GaugeRing 1.0 qml/GaugeRing.qml
+depends QtQuick
+

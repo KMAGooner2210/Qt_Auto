@@ -1,0 +1,6 @@
+module Chap3_3_2_Module
+typeinfo Chap3_3.2.qmltypes
+prefer :/Chap3_3_2_Module/
+Main 1.0 qml/Main.qml
+depends QtQuick
+

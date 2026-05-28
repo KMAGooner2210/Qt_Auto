@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Chap3_qml_basics/3.3_component/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "Chap3_3.3_autogen_timestamp_deps::@c209d8b54c2690e5fcbe"
+		}
+	],
+	"id" : "Chap3_3.3_autogen::@c209d8b54c2690e5fcbe",
+	"isGeneratorProvided" : true,
+	"name" : "Chap3_3.3_autogen",
+	"paths" : 
+	{
+		"build" : "Chap3_qml_basics/3.3_component",
+		"source" : "Chap3_qml_basics/3.3_component"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/CMakeFiles/Chap3_3.3_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/Chap3_qml_basics/3.3_component/Chap3_3.3_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

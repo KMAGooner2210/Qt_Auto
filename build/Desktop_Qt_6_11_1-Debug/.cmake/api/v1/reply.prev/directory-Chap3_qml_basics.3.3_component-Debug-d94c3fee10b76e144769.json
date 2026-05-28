@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Chap3_qml_basics/3.3_component",
+		"source" : "Chap3_qml_basics/3.3_component"
+	}
+}

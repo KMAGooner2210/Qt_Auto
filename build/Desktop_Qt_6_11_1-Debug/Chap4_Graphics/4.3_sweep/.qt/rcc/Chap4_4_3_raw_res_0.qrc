@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Chap4_4_3_Module/">
+    <file alias="icons/needle.svg">/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.3_sweep/icons/needle.svg</file>
+  </qresource>
+</RCC>
+

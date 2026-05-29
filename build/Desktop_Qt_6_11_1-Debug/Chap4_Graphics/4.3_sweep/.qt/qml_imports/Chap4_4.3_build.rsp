@@ -1,0 +1,15 @@
+-rootPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.3_sweep
+-cmake-output
+-output-file
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.3_sweep/.qt/qml_imports/Chap4_4.3_build.cmake
+-importPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.3_sweep
+-importPath
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.3_sweep/Chap4_4_3_Module
+-importPath
+/home/gooner/Qt6/6.11.1/gcc_64/qml
+-qrcFiles
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.3_sweep/.qt/rcc/qmake_Chap4_4_3_Module.qrc
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.3_sweep/.qt/rcc/Chap4_4_3_raw_qml_0.qrc
+/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.3_sweep/.qt/rcc/Chap4_4_3_raw_res_0.qrc

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Chap4_Graphics/4.3_sweep",
+		"source" : "Chap4_Graphics/4.3_sweep"
+	}
+}

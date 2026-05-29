@@ -1,0 +1,354 @@
+{
+	"backtrace" : 7,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_add_phony_target",
+			"_qt_internal_add_all_qmllint_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_dependencies",
+			"_qt_internal_add_phony_target_dependencies"
+		],
+		"files" : 
+		[
+			"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+			"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"Chap3_qml_basics/3.1_layout/CMakeLists.txt",
+			"Chap3_qml_basics/3.2_binding/CMakeLists.txt",
+			"Chap3_qml_basics/3.3_component/CMakeLists.txt",
+			"Chap4_Graphics/4.1_styling/CMakeLists.txt",
+			"Chap4_Graphics/4.2_assets/CMakeLists.txt",
+			"Chap4_Graphics/4.3_sweep/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1507,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 1035,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 3717,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1817,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1871,
+				"parent" : 5
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 352,
+				"parent" : 6
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 1875,
+				"parent" : 5
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 381,
+				"parent" : 8
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 3,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1507,
+				"parent" : 11
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 1035,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 3717,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1817,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 1875,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 381,
+				"parent" : 16
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 18
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1507,
+				"parent" : 19
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 1035,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 3717,
+				"parent" : 21
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1817,
+				"parent" : 22
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 1875,
+				"parent" : 23
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 381,
+				"parent" : 24
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 3,
+				"parent" : 26
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1507,
+				"parent" : 27
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 1035,
+				"parent" : 28
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 3717,
+				"parent" : 29
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1817,
+				"parent" : 30
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 1875,
+				"parent" : 31
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 381,
+				"parent" : 32
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 4,
+				"parent" : 34
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1507,
+				"parent" : 35
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 1035,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 3717,
+				"parent" : 37
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1817,
+				"parent" : 38
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 1875,
+				"parent" : 39
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 381,
+				"parent" : 40
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 3,
+				"parent" : 42
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1507,
+				"parent" : 43
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 1035,
+				"parent" : 44
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 3717,
+				"parent" : 45
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1817,
+				"parent" : 46
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 1875,
+				"parent" : 47
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 381,
+				"parent" : 48
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 9,
+			"id" : "Chap3_3.1_qmllint_json::@e6d5c1d33f5d7bcd0235"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "Chap3_3.2_qmllint_json::@4425c16c31380ac4bd37"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "Chap3_3.3_qmllint_json::@c209d8b54c2690e5fcbe"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "Chap4_4.1_qmllint_json::@e944b9042bcd8dd769bd"
+		},
+		{
+			"backtrace" : 41,
+			"id" : "Chap4_4.2_qmllint_json::@2b806cf18f2db4ccf0f4"
+		},
+		{
+			"backtrace" : 49,
+			"id" : "Chap4_4.3_qmllint_json::@db079ce50837016fccdd"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "/QmlLinter"
+	},
+	"id" : "all_qmllint_json::@e6d5c1d33f5d7bcd0235",
+	"name" : "all_qmllint_json",
+	"paths" : 
+	{
+		"build" : "Chap3_qml_basics/3.1_layout",
+		"source" : "Chap3_qml_basics/3.1_layout"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

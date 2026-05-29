@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/Chap4_4_3_Module/">
+    <file alias="qml/Main.qml">/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.3_sweep/qml/Main.qml</file>
+    <file alias="qml/GaugeRing.qml">/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.3_sweep/qml/GaugeRing.qml</file>
+  </qresource>
+</RCC>
+

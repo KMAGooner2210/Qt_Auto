@@ -1,0 +1,6 @@
+module Chap4_4_1_Module
+typeinfo Chap4_4.1.qmltypes
+prefer :/Chap4_4_1_Module/
+Main 1.0 qml/Main.qml
+depends QtQuick
+

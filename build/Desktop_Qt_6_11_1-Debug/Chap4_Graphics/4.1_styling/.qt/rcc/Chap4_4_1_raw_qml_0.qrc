@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Chap4_4_1_Module/">
+    <file alias="qml/Main.qml">/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.1_styling/qml/Main.qml</file>
+  </qresource>
+</RCC>
+

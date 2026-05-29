@@ -28,4 +28,4 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick)
 #add_subdirectory(apps/ivi_app)
 #add_subdirectory(apps/wayland_compositor)
 add_subdirectory(Chap3_qml_basics)
-
+add_subdirectory(Chap4_Graphics)

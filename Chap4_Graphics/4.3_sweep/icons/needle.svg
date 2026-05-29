@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 150" width="20" height="150">
+    <!-- Thân kim hình tam giác nhọn màu đỏ thể thao -->
+    <path fill="#ff3333" d="M10 0 L14 120 L6 120 Z"/>
+    <!-- Tâm chốt kim ở dưới cùng của kim -->
+    <circle cx="10" cy="120" r="10" fill="#ff3333"/>
+    <!-- Chốt bạc chính giữa tâm tròn -->
+    <circle cx="10" cy="120" r="4" fill="#dddddd"/>
+</svg>
+
+
+

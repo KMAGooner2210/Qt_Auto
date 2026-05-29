@@ -1,0 +1,121 @@
+{
+	"BUILD_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/Chap4_4.1_autogen",
+	"CMAKE_BINARY_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.1_styling",
+	"CMAKE_EXECUTABLE" : "/home/gooner/Qt6/Tools/CMake/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.1_styling/CMakeLists.txt",
+		"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
+		"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/home/gooner/Qt6/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.qt/qml_imports/Chap4_4.1_conf.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/Chap4_4.1_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "Chap4_4.1_autogen/timestamp",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/Chap4_4.1_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/Chap4_4.1_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_OPENGL_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QML_DEBUG",
+		"QT_QML_LIB",
+		"QT_QUICK_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.1_styling",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtQml",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtCore",
+		"/home/gooner/Qt6/6.11.1/gcc_64/mkspecs/linux-g++",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtQmlIntegration",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtNetwork",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtGui",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtQuick",
+		"/home/gooner/Qt6/6.11.1/gcc_64/include/QtOpenGL",
+		"/usr/include",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [ "--output-json" ],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/bin/g++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/home/gooner/Qt6/Tools/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/Chap4_4.1_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.qt/rcc/qrc_Chap4_4_1_raw_qml_0.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.qt/rcc/qrc_qmake_Chap4_4_1_Module.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.rcc/qmlcache/Chap4_4.1_qml/Main_qml.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.rcc/qmlcache/Chap4_4.1_qmlcache_loader.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/chap4_4.1_qmltyperegistrations.cpp"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/CMakeFiles/Chap4_4.1_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/gooner/Qt6/6.11.1/gcc_64/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/CMakeFiles/Chap4_4.1_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/gooner/Documents/AutomotiveCockpitWorkspace/Chap4_Graphics/4.1_styling/src/main.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : 
+	[
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.qt/rcc/qrc_Chap4_4_1_raw_qml_0.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.qt/rcc/qrc_qmake_Chap4_4_1_Module.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.rcc/qmlcache/Chap4_4.1_qml/Main_qml.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/.rcc/qmlcache/Chap4_4.1_qmlcache_loader.cpp",
+		"/home/gooner/Documents/AutomotiveCockpitWorkspace/build/Desktop_Qt_6_11_1-Debug/Chap4_Graphics/4.1_styling/chap4_4.1_qmltyperegistrations.cpp"
+	],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}
